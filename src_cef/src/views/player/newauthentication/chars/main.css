@@ -1,0 +1,298 @@
+.leftchars .HeadL h1 {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 3.519vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.056vh;
+    width: 23.333vh;
+    height: 6.111vh;
+    margin-bottom: 0vh;
+}
+
+.leftchars .HeadL p {color: rgba(255, 255, 255, 0.50);font-family: Gilroy;font-size: 1.204vh;font-style: normal;font-weight: 600;line-height: normal;margin-top: 1.204vh;margin-bottom: 0vh;}
+
+.leftchars {
+    position: absolute;
+    display: flex;
+    top: 14.537vh;
+    left: 1.759vh;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.leftchars .ListL {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.leftchars .ListL .CharsHa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35.556vh;
+    height: 7.222vh;
+    border-radius: 0.648vh;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.833vh;
+}
+
+.leftchars .ListL .CharsHa.active {
+    border-bottom: 0.32vh solid rgba(0, 0, 0, 0.20) !important;
+    background: #0091FF !important;
+    box-shadow: 0px 0px 0.926vh 0.463vh rgba(0, 145, 255, 0.25) !important;
+}
+
+.leftchars .ListL .CharsHa:hover {
+    background: rgba(0, 145, 255, 0.50);
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.leftchars .ListL .CharsHa .lvlL {
+    width: 7.407vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.leftchars .ListL .CharsHa .nameL {
+    width: 21.296vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.leftchars .HeadL {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: 2.500vh;
+}
+
+.leftchars .ListL .nameL p {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.019vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0vh;
+}
+
+.leftchars .ListL .nameL span {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.leftchars .ListL .CharsHa .iconL {display: flex;width: 6.556vh;flex-direction: row;justify-content: center;align-items: center;}
+
+.leftchars .ListL .CharsHa .iconL svg {
+    width: 2.778vh;
+    height: 2.778vh;
+    opacity: 0.25;
+}
+
+.leftchars .ListL .CharsHa.active .iconL svg {
+    opacity: 1;
+}
+
+.leftchars .ListL .CharsHa .freeL {
+    width: 7.407vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.leftchars .ListL .CharsHa .donatL {
+    width: 7.407vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 3.889vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-shadow: 0px 0px 0.278vh rgba(255, 255, 255, 0.50);
+}
+
+.leftchars .ListL .CharsHa .freeL svg {
+    width: 4.259vh;
+    height: 4.259vh;
+}
+
+.leftchars .ListL .CharsHa .lvlL b {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 0.278vh rgba(255, 255, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rightchars {
+    position: absolute;
+    display: flex;
+    top: 14.537vh;
+    right: 1.759vh;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.rightchars .HeadR {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: flex-end;
+    margin-bottom: 4.630vh;
+}
+
+.rightchars .HeadR h1 {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 3.519vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.056vh;
+    height: 6.111vh;
+    margin-bottom: 0vh;
+    text-align: right;
+}
+
+.rightchars .HeadR h1 b {
+    color: #0091FF;
+    text-align: right;
+    text-shadow: 0px 0px 5px rgba(0, 145, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 3.519vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.056vh; /* 94.737% */
+}
+
+.rightchars .ListR {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+
+.rightchars .ListR .CharsHa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 35.556vh;
+    height: 7.222vh;
+    border-radius: 0.648vh;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.833vh;
+    padding-right: 1.667vh;
+}
+
+.rightchars .ListR .CharsHa .nameR p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: right;
+    text-shadow: 0px 0px 0.278vh rgba(0, 0, 0, 0.25);
+    font-family: Gilroy;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0vh;
+}
+
+.rightchars .ListR .CharsHa .nameR span {
+    color: #FFF;
+    text-align: right;
+    text-shadow: 0px 0px 0.278vh rgba(255, 255, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 2.407vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rightchars .ListR .CharsHa .nameR {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.logoserv img {
+    width: 11.574vh;
+    height: 11.574vh;
+    background-size: cover;
+}
+
+.logoserv .donatemoney {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -3.5vh;
+    margin-right: 1vh;
+}
+
+.logoserv .donatemoney img {
+    width: 1.481vh;
+    height: 1.481vh;
+    background-size: cover;
+    margin-right: 0.278vh;
+}
+
+.logoserv .donatemoney p {
+    color: #FFF;
+    text-align: right;
+    font-family: Gilroy;
+    font-size: 2.222vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0vh;
+}
+
+.logoserv {
+    position: absolute;
+    width: 11.574vh;
+    top: 1.204vh;
+    right: 1.204vh;
+    z-index: 1;
+}
+
+.posbut {
+    position: absolute;
+    bottom: 11.8519vh;
+    left: 50%;
+    transform: translate(-50%, 0vh);
+}

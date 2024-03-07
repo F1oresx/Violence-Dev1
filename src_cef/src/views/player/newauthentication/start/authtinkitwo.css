@@ -1,0 +1,207 @@
+.authtinkitwo {
+    width: 100%;
+    height: 100%;
+    background: url(https://imgur.com/42e4tmL.png);
+    background-size: cover;
+}
+
+.authlogo {
+    width: 11.574vh;
+    height: 11.574vh;
+    position: absolute;
+    top: 1.204vh;
+    right: 1.204vh;
+}
+
+.authlogo img {
+    width: 11.574vh;
+    height: 11.574vh;
+    background-size: cover;
+}
+
+.authleft {
+    position: absolute;
+    left: 18.519vh;
+    top: 50%;
+    transform: translate(0vh, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.authleft h1 {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 4.167vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 3.426vh;
+}
+
+.authleft span {
+    display: block;
+    width: 46.296vh;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.481vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.699999988079071;
+    margin-bottom: 2.315vh;
+}
+
+.authblock {
+    width: 35.556vh;
+    height: 7.222vh;
+    border-radius: 0.648vh;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.389vh;
+}
+
+.authblockico {
+    min-width: 4.167vh;
+    max-width: 4.167vh;
+    height: 4.167vh;
+    border-radius: 0.463vh;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1.667vh;
+    margin-right: 1.574vh;
+}
+
+.authblockico img {
+    height: 1.389vh;
+}
+
+.authblockinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.authblockinfo b {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.authblockinfo p {
+    margin-bottom: 0vh;
+    color: #FFF;
+    text-shadow: 0px 0px 0.278vh rgba(255, 255, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 1.852vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.authbtn {
+    margin-top: 1.944vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.authbut {
+    width: 35.556vh;
+    height: 7.222vh;
+    display: flex;
+    border-radius: 0.648vh;
+    border-bottom: 0.185vh solid rgba(0, 0, 0, 0.20);
+    background: #0091FF;
+    box-shadow: 0px 0px 0.926vh 0.463vh rgba(0, 145, 255, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.852vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.389vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.authbut:hover {
+    transform: scale(1.05);
+}
+
+.authhelp {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.481vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.556vh;
+}
+
+.authhelp b {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.852vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.authlink {
+    color: #FFF !important;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.authlink:hover {
+    opacity: 1;
+}
+
+.authblockinfo input.main__input_text {
+    margin-bottom: 0vh;
+    color: #FFF;
+    text-shadow: 0px 0px 0.278vh rgba(255, 255, 255, 0.50);
+    font-family: Gilroy;
+    font-size: 1.852vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent;
+    border: none;
+}
+
+.authblockinfo .main__input {
+    border: none !important;
+    padding: 0vh !important;
+    margin-bottom: 0vh !important;
+    height: 1.944vh !important;
+    background: transparent !important;
+}
+
+.authblockinfo .main__input:hover {
+    background: transparent !important;
+}
+
+.authblockinfo .main__input:focus {
+    background: transparent !important;
+}

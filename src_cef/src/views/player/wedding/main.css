@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+.main{
+    position: absolute;
+    width: 596px;
+    height: 601px;
+    display: flex;
+    background-repeat: no-repeat;
+    background: rgba(18, 18, 18, 0.95);
+    font-family: 'Montserrat';
+    color: white;
+    margin-left: 660px;
+    margin-top: 9.5%;
+    border-radius: 24px;
+    font-size:16px;
+}
+.wedding__header{
+    font-weight: 500;
+    width: 550px;
+    border-radius: 9px;
+    display: flex;
+    background: #FF005C;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    padding:0 0 0 10px; 
+    text-transform: uppercase;
+    height: 71px;
+    font-size: 22px;
+    margin-left: 19px;
+    margin-top: 19px;
+}
+.placeept{
+    margin-left: 19px;
+    position: absolute;
+    margin-top: 130px;
+}
+.placeept span{
+    position: absolute;
+    font-weight: 200;
+    margin-left: 2.5%;
+    margin-top: -19%;
+    font-size: 12px;
+    width:400px;
+    opacity: 20%;
+}
+.input input::placeholder {
+    width: 900px !important; /* Примените !important для увеличения приоритета */
+}
+.Input {
+    position: absolute;
+    width: 954px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgba(49, 49, 49, 0.10);
+    color:rgb(0, 0, 0);
+    /* border: 1.5px solid rgba(123, 123, 123, 0.50); */
+}
+  
+.input input {
+    color:rgba(123, 123, 123, 0.50);
+}
+.wedding__selector{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    opacity:50%;
+    height: 70px;
+    margin-top: 285px;
+    margin-left:-550px;
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+    background-color: #1B56AF;
+    border-radius:6px;
+}
+.wedding__selector2{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    opacity:50%;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 285px;
+    margin-left:-250px;
+    height: 70px;
+    background-color: rgba(244, 124, 246, 0.41);
+    border-radius:6px;
+}
+.wedding__selector3{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 553px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 373px;
+    margin-left:-550px;
+    color:white;
+    opacity:50%;
+    height: 60px;
+    background-color: rgba(74, 74, 74, 0.53);
+    border-radius:6px;
+}
+.wedding__selector3:hover{
+    text-shadow: #ffffff 0 0 10px;
+    opacity: 100;
+}
+.wedding__selector1:hover{
+    text-shadow: #ffffff 0 0 10px;
+    opacity: 100;
+}
+.wedding__selector2:hover{
+    text-shadow: #ffffff 0 0 10px;
+    opacity: 100;
+}
+.wedding__selector:hover{
+    text-shadow: #ffffff 0 0 10px;
+    opacity: 100;
+}
+.wedding__button:hover{
+    text-shadow: #ffffff 0 0 10px;
+    opacity: 100;
+}
+.wedding__subtitle{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-top: 245px;
+    margin-left:-550px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+} 
+.wedding__button{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 470px;
+    margin-left:20px;
+    color:white;
+    height: 99px;
+    background-color: #7FD64A;
+    border-radius:6px;
+}
+.wedding__header img:hover{
+    opacity: 70%;
+}
+.red-button {
+    background-color: red;
+}
