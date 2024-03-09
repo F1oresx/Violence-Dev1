@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Зеленые","TName":"","Price":1200,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Насыщенный зеленый","TName":"","Price":1200,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Светло голубые","TName":"","Price":1200,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Ночное небо","TName":"","Price":1200,"Donate":0},
@@ -14,7 +15,6 @@
 	"13": {"Id":13,"Variation":13,"Name":"Новые","TName":"","Price":1200,"Donate":0},
 	"14": {"Id":14,"Variation":14,"Name":"Новые","TName":"","Price":1200,"Donate":0},
 	"15": {"Id":15,"Variation":15,"Name":"Новые","TName":"","Price":1200,"Donate":0},
-	"83": {"Id":83,"Variation":0,"Name":"Зеленые","TName":"","Price":1200,"Donate":0},
 	"16": {"Id":16,"Variation":16,"Name":"Новые","TName":"","Price":1200,"Donate":0},
 	"17": {"Id":17,"Variation":17,"Name":"Новые","TName":"","Price":1200,"Donate":0},
 	"18": {"Id":18,"Variation":18,"Name":"Новые","TName":"","Price":1200,"Donate":0},

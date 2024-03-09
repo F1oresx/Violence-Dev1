@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Без бровей","TName":"","Price":450,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Неопрятные","TName":"","Price":450,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Идеальные","TName":"","Price":450,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Модные","TName":"","Price":450,"Donate":0},
@@ -30,6 +31,5 @@
 	"29": {"Id":29,"Variation":29,"Name":"Новые","TName":"","Price":450,"Donate":0},
 	"30": {"Id":30,"Variation":30,"Name":"Новые","TName":"","Price":450,"Donate":0},
 	"31": {"Id":31,"Variation":31,"Name":"Новые","TName":"","Price":450,"Donate":0},
-	"32": {"Id":32,"Variation":32,"Name":"Новые","TName":"","Price":450,"Donate":0},
-	"73": {"Id":73,"Variation":0,"Name":"Без бровей","TName":"","Price":450,"Donate":0}
+	"32": {"Id":32,"Variation":32,"Name":"Новые","TName":"","Price":450,"Donate":0}
 }

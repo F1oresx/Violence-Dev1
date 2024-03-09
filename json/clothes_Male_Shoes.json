@@ -103,6 +103,8 @@
 	"101": {"Id":101,"Variation":150,"TName":"CMS_CUSTOM_101_","Textures":[0,1,2,3,4]},
 	"102": {"Id":102,"Variation":151,"TName":"","Textures":[0,1,2,3,4,5]},
 	"103": {"Id":103,"Variation":152,"TName":"CMS_CUSTOM_103_","Textures":[0,1,2,3,4,5,6,7,8,9,10,11,12]},
+	"104": {"Id":104,"Variation":153,"TName":"CMS_CUSTOM_104_","Textures":[0,1,2,3,4,5,6,7,8]},
+	"105": {"Id":105,"Variation":154,"TName":"","Textures":[0,1,2]},
 	"106": {"Id":106,"Variation":155,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9,10,11]},
 	"107": {"Id":107,"Variation":156,"TName":"","Textures":[0,1,2]},
 	"108": {"Id":108,"Variation":157,"TName":"","Textures":[0,1,2,3,4,5,6,7]},

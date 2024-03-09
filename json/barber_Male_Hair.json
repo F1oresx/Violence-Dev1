@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Лысый","TName":"","Price":1350,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Армейская","TName":"","Price":2250,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Стильный","TName":"","Price":2250,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Андеркат","TName":"","Price":3000,"Donate":0},
@@ -114,6 +115,5 @@
 	"113": {"Id":113,"Variation":117,"Name":"Плэйбой","TName":"","Price":9000,"Donate":0},
 	"114": {"Id":114,"Variation":118,"Name":"Растрепанный","TName":"","Price":9000,"Donate":0},
 	"115": {"Id":115,"Variation":119,"Name":"Уложенный ирокез","TName":"","Price":9000,"Donate":0},
-	"116": {"Id":116,"Variation":120,"Name":"Отросшая чёлка","TName":"","Price":9000,"Donate":0},
-	"234": {"Id":234,"Variation":0,"Name":"Лысый","TName":"","Price":1350,"Donate":0}
+	"116": {"Id":116,"Variation":120,"Name":"Отросшая чёлка","TName":"","Price":9000,"Donate":0}
 }

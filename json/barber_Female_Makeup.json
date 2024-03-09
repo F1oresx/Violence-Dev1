@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Без теней","TName":"","Price":900,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Яркие тени","TName":"","Price":900,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Четкий макияж","TName":"","Price":900,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Летний макияж","TName":"","Price":900,"Donate":0},
@@ -71,6 +72,5 @@
 	"70": {"Id":70,"Variation":70,"Name":"Новое","TName":"","Price":900,"Donate":0},
 	"71": {"Id":71,"Variation":71,"Name":"Новое","TName":"","Price":900,"Donate":0},
 	"72": {"Id":72,"Variation":72,"Name":"Новое","TName":"","Price":900,"Donate":0},
-	"73": {"Id":73,"Variation":73,"Name":"Новое","TName":"","Price":900,"Donate":0},
-	"244": {"Id":244,"Variation":0,"Name":"Без теней","TName":"","Price":900,"Donate":0}
+	"73": {"Id":73,"Variation":73,"Name":"Новое","TName":"","Price":900,"Donate":0}
 }

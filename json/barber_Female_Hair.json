@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Бритая","TName":"","Price":1350,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Бухгалтерская","TName":"","Price":2250,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Офисная","TName":"","Price":2250,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Короткие косички","TName":"","Price":3000,"Donate":0},
@@ -120,6 +121,5 @@
 	"119": {"Id":119,"Variation":124,"Name":"Модная укладка","TName":"","Price":9000,"Donate":0},
 	"120": {"Id":120,"Variation":125,"Name":"Три цветочка","TName":"","Price":9000,"Donate":0},
 	"121": {"Id":121,"Variation":126,"Name":"Каре с косичками","TName":"","Price":9000,"Donate":0},
-	"122": {"Id":122,"Variation":127,"Name":"Домашняя коса","TName":"","Price":9000,"Donate":0},
-	"246": {"Id":246,"Variation":0,"Name":"Бритая","TName":"","Price":1350,"Donate":0}
+	"122": {"Id":122,"Variation":127,"Name":"Домашняя коса","TName":"","Price":9000,"Donate":0}
 }

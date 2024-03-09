@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"","TName":"HAIR_BEARD0","Price":600,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"","TName":"","Price":600,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"","TName":"","Price":600,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"","TName":"","Price":600,"Donate":0},
@@ -38,6 +39,5 @@
 	"37": {"Id":37,"Variation":37,"Name":"","TName":"","Price":600,"Donate":0},
 	"38": {"Id":38,"Variation":38,"Name":"","TName":"","Price":600,"Donate":0},
 	"39": {"Id":39,"Variation":39,"Name":"","TName":"","Price":600,"Donate":0},
-	"40": {"Id":40,"Variation":40,"Name":"","TName":"","Price":600,"Donate":0},
-	"83": {"Id":83,"Variation":0,"Name":"","TName":"HAIR_BEARD0","Price":600,"Donate":0}
+	"40": {"Id":40,"Variation":40,"Name":"","TName":"","Price":600,"Donate":0}
 }

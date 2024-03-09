@@ -130,11 +130,18 @@
 	"128": {"Id":128,"Variation":128,"TName":"CLO_SUM_L_1_","Textures":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},
 	"129": {"Id":129,"Variation":129,"TName":"CLO_SUM_L_2_","Textures":[0,1,2,3,4,5,6,7]},
 	"130": {"Id":130,"Variation":130,"TName":"CLO_SUM_L_2_","Textures":[0,1,2,3,4,5,6,7]},
+	"131": {"Id":131,"Variation":193,"TName":"","Textures":[0,1]},
+	"132": {"Id":132,"Variation":194,"TName":"CML_CUSTOM_132_","Textures":[0,1,2,3,4,5,6,7]},
+	"133": {"Id":133,"Variation":195,"TName":"CML_CUSTOM_133_","Textures":[0,1]},
+	"134": {"Id":134,"Variation":196,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9,10,11,12]},
+	"135": {"Id":135,"Variation":197,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9]},
+	"136": {"Id":136,"Variation":198,"TName":"CML_CUSTOM_136_","Textures":[0,1,2,3,4,5,6,7]},
 	"137": {"Id":137,"Variation":199,"TName":"CML_CUSTOM_137_","Textures":[0]},
 	"138": {"Id":138,"Variation":200,"TName":"CML_CUSTOM_138_","Textures":[0,1]},
 	"139": {"Id":139,"Variation":201,"TName":"","Textures":[0]},
 	"140": {"Id":140,"Variation":131,"TName":"","Textures":[0]},
 	"141": {"Id":141,"Variation":132,"TName":"","Textures":[0,1]},
+	"142": {"Id":142,"Variation":202,"TName":"","Textures":[0,1,2]},
 	"143": {"Id":143,"Variation":203,"TName":"","Textures":[0]},
 	"144": {"Id":144,"Variation":204,"TName":"","Textures":[0,1]},
 	"145": {"Id":145,"Variation":205,"TName":"","Textures":[0,1]},
@@ -173,5 +180,6 @@
 	"181": {"Id":181,"Variation":242,"TName":"","Textures":[0,1]},
 	"182": {"Id":182,"Variation":243,"TName":"","Textures":[0,1,2]},
 	"183": {"Id":183,"Variation":244,"TName":"","Textures":[0]},
-	"184": {"Id":184,"Variation":245,"TName":"","Textures":[0,1,2,3]}
+	"184": {"Id":184,"Variation":245,"TName":"","Textures":[0,1,2,3]},
+	"185": {"Id":185,"Variation":246,"TName":"","Textures":[0,1,2,3,4,5,6,7]}
 }

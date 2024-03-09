@@ -1,4 +1,5 @@
 ﻿{
+	"0": {"Id":0,"Variation":0,"Name":"Бритый","TName":"","Price":600,"Donate":0},
 	"1": {"Id":1,"Variation":1,"Name":"Щетина","TName":"","Price":600,"Donate":0},
 	"2": {"Id":2,"Variation":2,"Name":"Якорь","TName":"","Price":600,"Donate":0},
 	"3": {"Id":3,"Variation":3,"Name":"Круглая","TName":"","Price":600,"Donate":0},
@@ -26,6 +27,5 @@
 	"25": {"Id":25,"Variation":25,"Name":"Верди","TName":"","Price":600,"Donate":0},
 	"26": {"Id":26,"Variation":26,"Name":"Подкова","TName":"","Price":600,"Donate":0},
 	"27": {"Id":27,"Variation":27,"Name":"Пират","TName":"","Price":600,"Donate":0},
-	"28": {"Id":28,"Variation":28,"Name":"Широкие баки","TName":"","Price":600,"Donate":0},
-	"59": {"Id":59,"Variation":0,"Name":"Бритый","TName":"","Price":600,"Donate":0}
+	"28": {"Id":28,"Variation":28,"Name":"Широкие баки","TName":"","Price":600,"Donate":0}
 }
