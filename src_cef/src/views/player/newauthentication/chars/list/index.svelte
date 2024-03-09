@@ -75,16 +75,15 @@
 
 <svelte:window on:keyup={onKeyUp} on:mouseup={onKeyUp} />
 
-<div class="haxchars">
-    <div class="leftchars"  on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="HeadL">
-            <h1>Выбор<br> Персонажа</h1>
-            <p>Выберите персонажа чтобы начать игру</p>
+<div class="box-flex">
+    <div class="main__scroll big"></div>
+    <div class="auth__characters" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
+        <div class="auth__characters_header">
+            <span class="auth-logout"></span>
+            {$accountLogin}
         </div>
-        <div class="ListL">
-            {#each $accountData.charsSlot as char, index}
-                <CharacterMain charid={index} char={getCharData ($accountData.chars, char, index)}  />
-            {/each}
-        </div>
+        {#each $accountData.charsSlot as char, index}
+            <CharacterMain charid={index} char={getCharData ($accountData.chars, char, index)}  />
+        {/each}
     </div>
 </div>

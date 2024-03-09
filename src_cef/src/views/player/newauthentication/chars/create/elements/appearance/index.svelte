@@ -175,11 +175,12 @@
 
 <svelte:window on:keyup={handleKeyUp} />
 
-{#each componentsDataToGender as component, index}
+<div class="auth__customization_elements">
+    {#each componentsDataToGender as component, index}
         {#if component.onlysex === "all" || component.onlysex === $gender}
-        <div class="CharsHa" class:active={activeItem === index} on:keypress={() => {}} on:click={() => activeItem = index}>          
-            <div class="nameR">
-                <p>{component.name}</p>
+            <div class="auth__customization_element" class:active={activeItem === index} on:click={() => activeItem = index}>
+                <div class="auth__customization_leftside">{component.name}</div>
+
                 <ListButton
                     id={$customization[component.dataname].id}
                     on:click={e => activeItem = index}
@@ -187,39 +188,41 @@
                     active={activeItem === index}
                     onChange={(change) => OnChangeAppearance (index, change)} />
             </div>
-        </div>
-    {/if}
-{/each}
+        {/if}
+    {/each}
+</div>
+<div class="auth__scroll" />
 
-{#if componentsDataToGender[activeItem].colorSelector}
-    <div class="CharsColors">               
-        <div class="nameR">
-            <p>Выбор цвета</p>    
-        </div>
-        <div class="Colors">
-            {#each componentsDataToGender[activeItem].colorSelector as color, index}
-                <div
-                key={index}
-                class="color" class:active={$customization[componentsDataToGender[activeItem].dataname].color === color.id}
-                on:keypress={() => {}} on:click={() => updateAppearance($gender, componentsDataToGender[activeItem].dataname, $customization[componentsDataToGender[activeItem].dataname].id, color.id, $customization[componentsDataToGender[activeItem].dataname].opacity)}
-                style="background: {color.hexcolor}" />
-            {/each}
-        </div>
-    </div>
-{/if}
-
-{#if componentsDataToGender[activeItem].opacitySelector}
-    <div class="CharsNA">               
-        <div class="nameR">
-            <p>Насыщенность</p>    
-        </div>
+<div class="auth__customization_elements">
+    {#if componentsDataToGender[activeItem].opacitySelector}
+    <div class="title margin-top-20">{componentsDataToGender[activeItem].name}:</div>
+    <div class="auth__customization_element">
+        <div class="auth__customization_leftside">Насыщенность:</div>
         <InputBlock
-                id="appearance"
-                leftText="arrow-down"
-                rightText="arrow-up"
-                step={0.1}
-                min={0}
-                max={1}
-                value={$customization[componentsDataToGender[activeItem].dataname].opacity}/>
+            id="appearance"
+            leftText="arrow-down"
+            rightText="arrow-up"
+            step={0.1}
+            min={0}
+            max={1}
+            value={$customization[componentsDataToGender[activeItem].dataname].opacity}
+            callback={newvalue => updateAppearance($gender, componentsDataToGender[activeItem].dataname, $customization[componentsDataToGender[activeItem].dataname].id, $customization[componentsDataToGender[activeItem].dataname].color, newvalue)} />
     </div>
-{/if}
+    {/if}
+
+    {#if componentsDataToGender[activeItem].colorSelector}
+    <div class="auth__customization_element column">
+        <div class="auth__customization_leftside">Цвет</div>
+        
+        <div class="auth__customization_colors" style={`grid-template-rows: repeat(${Math.ceil(componentsDataToGender[activeItem].colorSelector.length / 9)}, 1fr)`}>
+            {#each componentsDataToGender[activeItem].colorSelector as color, index}
+            <div
+                key={index}
+                class="auth__customization_color" class:active={$customization[componentsDataToGender[activeItem].dataname].color === color.id}
+                on:click={() => updateAppearance($gender, componentsDataToGender[activeItem].dataname, $customization[componentsDataToGender[activeItem].dataname].id, color.id, $customization[componentsDataToGender[activeItem].dataname].opacity)}
+                style="background: {color.hexcolor}" />
+        {/each}
+        </div>
+    </div>
+    {/if}
+</div>

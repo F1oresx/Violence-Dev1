@@ -1,7 +1,6 @@
 <script>
     import { translateText } from 'lang'
     import {executeClient, executeClientAsync} from 'api/rage'
-    import './main.css';
 	import News from './../news/index.svelte';
 	import Chars from './chars.svelte';
 	import Merger from './merger/index.svelte';
@@ -86,36 +85,31 @@
 </script>
 <svelte:window on:keyup={onKeyUp} />
 
-<div class="logoserv">
-    <img src="https://imgur.com/vG2I7zH.png" alt=""/>
-    <div class="donatemoney">
-        <img src="https://imgur.com/DSsk62Q.png" alt=""/><p>{format("money", $accountRedbucks)}</p>
-        
-    </div>
-</div>
-
 <div id="newauthentication">
     <div class="header box-center">
-        <!-- <div class="header__logo"/> -->
-        <!-- <div class="box-flex" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-            <div class="header-key box-center" on:keypress={() => {}} on:click={onClickQ}>
+        <div class="header__logo"/>
+        <div class="box-flex" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
+            <div class="header-key box-center" on:click={onClickQ}>
                 Q
             </div>
-            <div class="header__element" class:active={SelectViews === "News"} on:keypress={() => {}} on:click={() => OnSelectViews("News")}>
+            <div class="header__element" class:active={SelectViews === "News"} on:click={() => OnSelectViews("News")}>
                 {translateText('player2', 'Новости')}
             </div>
-            <div class="header__element" class:active={SelectViews === "Chars"} on:keypress={() => {}} on:click={() => OnSelectViews("Chars")}>
+            <div class="header__element" class:active={SelectViews === "Chars"} on:click={() => OnSelectViews("Chars")}>
                 {translateText('player2', 'Авторизация')}
             </div>
             {#if isMergerToggled}
-            <div class="header__element" class:active={SelectViews === "Merger"} on:keypress={() => {}} on:click={() => OnSelectViews("Merger")}>
+            <div class="header__element" class:active={SelectViews === "Merger"} on:click={() => OnSelectViews("Merger")}>
                 {translateText('player2', 'Перенести персонажей с White/Red')}
             </div>
             {/if}
-            <div class="header-key box-center" on:keypress={() => {}} on:click={onClickE}>
+            <div class="header-key box-center" on:click={onClickE}>
                 E
             </div>
-        </div> -->
+        </div>
+        <div class="header__money">
+            {format("money", $accountRedbucks)} <span class="header__money_redbucks"></span>
+        </div>
     </div>
     <div class="newauthentification__characters">
         <svelte:component this={Views[SelectViews]} {SetMerger} {isMerger} />

@@ -29,8 +29,8 @@
 
 <svelte:window on:keyup={handleKeyUp} />
 
-<div class="auth__box-arrows3" on:keypress={() => {}} on:click>
-    <span class="auth-arrow-left auth__customization_icon" on:keypress={() => {}} on:click={() => OnChangeAppearance(-1)} />
+<div class="auth__box-arrows" on:click>
+    <span class="auth-arrow-left auth__customization_icon" on:click={() => OnChangeAppearance(-1)} />
     <div class="auth__customization_text">{Array.isArray(appearances[key]) ? appearances[key][id].name : appearances[key][$gender][id].name}</div>
-    <span class="auth-arrow-right auth__customization_icon" on:keypress={() => {}} on:click={() => OnChangeAppearance(1)} />
+    <span class="auth-arrow-right auth__customization_icon" on:click={() => OnChangeAppearance(1)} />
 </div>

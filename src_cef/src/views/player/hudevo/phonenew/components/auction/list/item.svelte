@@ -41,10 +41,6 @@
             window.notificationAdd(4, 9, translateText('player2', 'Цена не может быть меньше нынешней'), 3000);
             return;
         }
-        if(selectItem.lastPrice >= 300000000) {
-            window.notificationAdd(4, 9, translateText('player2', 'Неверно указанная сумма'), 3000);
-            return;
-        }
         executeClientToGroup ("auction.bet", selectItem.id, priceVal)
     }
 

@@ -148,38 +148,34 @@
 
 <svelte:window on:keyup={handleKeyUp} />
 
-
-
-
-{#each componentsData as item, index}
+<div class="auth__customization_elements">
+    {#each componentsData as item, index}
     {#if $customization[item.dataname]}
-        <div class="CharsHa" class:active={activeItem === index} on:keypress={() => {}} on:click={() => activeItem = index}>          
-            <div class="nameR">
-                <p>{item.name}</p>
-                <ListButton
+    <div class="auth__customization_element" class:active={activeItem === index} on:click={() => activeItem = index}>
+        <div class="auth__customization_leftside">{item.name}</div>
+
+        <ListButton
             on:click={e => activeItem = index}
             key={item.dataname}
             active={activeItem === index}
             preset={$customization[item.dataname].preset}
             onChange={(change) => OnPresetChanged (index, change)} />
-            </div>
-        </div>
+    </div>
     {/if}
-{/each}
-
-<div class="createchar1">
-    <div class="title margin-top-20">{componentsData[activeItem].name}:</div>
-    {#if $customization[componentsData[activeItem].dataname]}
-    <Selector
-        isLine={componentsData[activeItem].gridType}
-        key={componentsData[activeItem].dataname}
-        x={$customization[componentsData[activeItem].dataname].x}
-        y={$customization[componentsData[activeItem].dataname].y}
-        xLeftName={componentsData[activeItem].xgrid[0]}
-        xRightName={componentsData[activeItem].xgrid[1]}
-        yTopName={componentsData[activeItem].ygrid[0]}
-        yBottomName={componentsData[activeItem].ygrid[1]}
-        onChange={OnCustomPresetChanged} />
-
-    {/if}
+    {/each}
 </div>
+<div class="auth__scroll" />
+<div class="title margin-top-20">{componentsData[activeItem].name}:</div>
+{#if $customization[componentsData[activeItem].dataname]}
+<Selector
+    isLine={componentsData[activeItem].gridType}
+    key={componentsData[activeItem].dataname}
+    x={$customization[componentsData[activeItem].dataname].x}
+    y={$customization[componentsData[activeItem].dataname].y}
+    xLeftName={componentsData[activeItem].xgrid[0]}
+    xRightName={componentsData[activeItem].xgrid[1]}
+    yTopName={componentsData[activeItem].ygrid[0]}
+    yBottomName={componentsData[activeItem].ygrid[1]}
+    onChange={OnCustomPresetChanged} />
+
+{/if}

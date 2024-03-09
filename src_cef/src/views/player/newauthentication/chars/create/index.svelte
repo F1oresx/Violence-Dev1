@@ -11,7 +11,6 @@
     import CreateNewCustomization from 'store/random/index.js'
     import { validate } from 'api/validation';
     import PopupConfirm from '../../confirm/index.svelte';
-    import './main.css';
 
     let elemetsId = 0;
 
@@ -93,35 +92,35 @@
 {#if isPopupConfirmed}
     <PopupConfirm {onClickRandom} {onPopupToogle}/>
 {/if}
-
-<div class="rightcharsCR">
-    <div class="HeadR">
-        <h1>Создание<br>персонажа</h1>
-        <p>Создайте своего персонажа которым будете творить историю</p>
-    </div>
-    <div class="ListR" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>     
-        <svelte:component this={elemetsSettings[elemetsId].elemets} />     
-    </div>
-</div>
-
 <div class="auth__center">
 
     <div class="auth__buttons" style="justify-content: center;" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="createbutStart" style="margin-right: 0" on:keypress={() => {}} on:click={onCreate}>
-            Создать персонажа
+        <div class="main__button main_button_size_large" style="margin-right: 0" on:click={onCreate}>
+            <div class="main__button_left box-center">{translateText('player2', 'Создать')}</div>
+            <div class="main__button_right box-center">
+                <div class="main__button_square box-center">
+                    <span class="auth-arrow"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="auth__customisation_center">
     <div class="auth__customization">
-        <div class="auth__customization_categories1" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
+        <div class="auth__customization_characteristics" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
+            <div class="auth__customization_header">{elemetsSettings[elemetsId].title}</div>
+
+            <svelte:component this={elemetsSettings[elemetsId].elemets} />        
+        </div>
+
+        <div class="auth__customization_categories" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
             {#each elemetsSettings as item, index}
-            <div class="auth__customization_categorie" on:keypress={() => {}} on:click={() => onSelectCategory (index)} class:active={elemetsId == index}>
-                <span class={item.icon+1}></span>
+            <div class="auth__customization_categorie" on:click={() => onSelectCategory (index)} class:active={elemetsId == index}>
+                <span class={item.icon}></span>
             </div>
             {/each}
-            <div class="auth__customization_categorie" on:keypress={() => {}} on:click={() => isPopupConfirmed = true}>
-                <span class="auth-random1"></span>
+            <div class="auth__customization_categorie" on:click={() => isPopupConfirmed = true}>
+                <span class="auth-random"></span>
             </div>
             {#if false}
                 <div class="auth__customization_categorie" title="Перенос внешности с Classic">

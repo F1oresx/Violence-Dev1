@@ -45,16 +45,17 @@
 
 <svelte:window on:keyup={handleKeyUp} />
 
-{#each componentsData as item, index}
-    <div class="CharsHa" class:active={activeItem === index} on:keypress={() => {}} on:click={() => activeItem = index}>          
-        <div class="nameR">
-            <p>{item.title}</p>
-            <ClothButton
+
+<div class="auth__customization_elements">
+    {#each componentsData as item, index}
+    <div class="auth__customization_element" class:active={activeItem === index} on:click={() => activeItem = index}>
+        <div class="auth__customization_leftside">{item.title}</div>
+        <ClothButton
             id={$customization[item.key]}
             on:click={() => activeItem = index}
             key={item.key}
             active={activeItem === index}
             onChange={OnChangeCloth} />
-        </div>
     </div>
-{/each}
+    {/each}
+</div>

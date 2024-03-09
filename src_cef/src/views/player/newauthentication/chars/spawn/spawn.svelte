@@ -1,6 +1,6 @@
 <script>
     import { executeClient } from 'api/rage'
-    import { translateText } from 'lang'
+
     export let UUID;
     export let FractionID;
     export let OrganizationID;
@@ -100,64 +100,38 @@
 
 {#if !isBan && DeleteData === "-"}
 <div class="auth__center">
-
-    <div class="auth__spawn_elements posbut" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="createbutSt" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.pos)} class:use={true} class:active={selectSpawnId == spawnData.pos}>
-            Место выхода
-        </div>
-        {#if houseId !== "-"}
-            <div class="createbutSt1" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.house)} class:use={true} class:active={selectSpawnId == spawnData.house}>
-                Дома
-            </div>
-        {/if}
-        {#if FractionID > 0 || OrganizationID > 0}
-            <div class="createbutSt1" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.org)} class:use={true} class:active={selectSpawnId == spawnData.org}>
-                Организация
-            </div>
-        {/if}
-    </div>
-
-    <div class="auth__buttons" style="justify-content: center;" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="createbut" style="margin-right: 0" on:keypress={() => {}} on:click={onSpawn}>
-            Начать играть
-        </div>
-    </div>
-</div>
-
-
-<!-- <div class="auth__center">
     <div class="auth__spawn_elements" on:mouseenter={() => MouseUse (false)} on:mouseleave={() => MouseUse (true)}>
-        <div class="auth__spawn_element" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.pos)} class:use={true} class:active={selectSpawnId == spawnData.pos}>
-            <div>{translateText('player2', 'Место выхода')}</div>
-            <div class="auth__small_text">{translateText('player2', 'Вы ничего не потеряете')}</div>
+        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.pos)} class:use={true} class:active={selectSpawnId == spawnData.pos}>
+            <div>Место выхода</div>
+            <div class="auth__small_text">Вы ничего не потеряете.</div>
             <span class="auth-exit-place"></span>
         </div>
         {#if houseId !== "-"}
-        <div class="auth__spawn_element" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.house)} class:use={true} class:active={selectSpawnId == spawnData.house}>
+        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.house)} class:use={true} class:active={selectSpawnId == spawnData.house}>
             {#if !spawnConfirm}
             <div class="box-column">
-                <div> {translateText('player2', 'Дома')}</div>
-                <div class="auth__small_text">{translateText('player2', 'Вы потеряете нелегальные предметы')}</div>
+                <div>Дома</div>
+                <div class="auth__small_text">Вы потеряете нелегальные предметы.</div>
             </div>
             <span class="auth-home"></span>
             {:else}
-            <div class="auth__small_text">{translateText('player2', 'Вы потеряете нелегальные предметы')}</div>
+            <div class="auth__small_text">Вы потеряете нелегальные предметы</div>
             <div class="box-flex">
                 <div class="auth__spawn_btn">
-                    {translateText('player2', 'Да')}
+                    Да
                 </div>
                 <div class="auth__spawn_btn">
-                    {translateText('player2', 'Нет')}
+                    Нет
                 </div>
             </div>
             {/if}
         </div>
         {/if}
         {#if FractionID > 0 || OrganizationID > 0}
-        <div class="auth__spawn_element" on:keypress={() => {}} on:click={() => onSelectSpawnId (spawnData.org)} class:use={true} class:active={selectSpawnId == spawnData.org}>
+        <div class="auth__spawn_element" on:click={() => onSelectSpawnId (spawnData.org)} class:use={true} class:active={selectSpawnId == spawnData.org}>
             <div class="box-column">
-                <div> {translateText('player2', 'Вы потеряете нелегальные предметы')}</div>
-                <div class="auth__small_text">{translateText('player2', 'Вы потеряете нелегальные предметы')}</div>
+                <div>Во фракции</div>
+                <div class="auth__small_text">Вы потеряете нелегальные предметы.</div>
             </div>
             <span class="auth-fraction"></span>
         </div>
@@ -167,8 +141,8 @@
         <div class="main__button_square box-center">
             <b>&#8592;</b>
         </div>
-        <div class="main__button main_button_size_large" style="margin-right: 0" on:keypress={() => {}} on:click={onSpawn}>
-            <div class="main__button_left box-center">{translateText('player2', 'Войти')}</div>
+        <div class="main__button main_button_size_large" style="margin-right: 0" on:click={onSpawn}>
+            <div class="main__button_left box-center">Войти</div>
             <div class="main__button_right box-center">
                 <div class="main__button_square box-center">
                     <span class="auth-arrow"/>
@@ -179,5 +153,5 @@
             <b>&#8594;</b>
         </div>
     </div>
-</div> -->
+</div>
 {/if}

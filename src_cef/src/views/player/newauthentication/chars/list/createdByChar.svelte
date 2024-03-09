@@ -95,49 +95,7 @@
     }
 </script>
 
-<div class="CharsHa" on:keypress={() => {}} on:click={onSelectChar} class:active={$selectIndex === charid}>
-    <div class="lvlL">
-        <b>{charData.LVL}</b>
-    </div>
-    <div class="nameL">
-        <p>Персонаж # {charid + 1}</p>
-        <span>{charData.FirstName} {charData.LastName}</span>
-    </div>
-    <div class="iconL">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_415_477)">
-                <path d="M16.25 21.25L22.5 15L16.25 8.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-            <g filter="url(#filter1_d_415_477)">
-                <path d="M7.5 21.25L13.75 15L7.5 8.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-            <defs>
-                <filter id="filter0_d_415_477" x="12.25" y="4.75" width="14.25" height="20.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                    <feOffset></feOffset>
-                    <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-                    <feComposite in2="hardAlpha" operator="out"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_415_477"></feBlend>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_415_477" result="shape"></feBlend>
-                </filter>
-                <filter id="filter1_d_415_477" x="3.5" y="4.75" width="14.25" height="20.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                    <feOffset></feOffset>
-                    <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-                    <feComposite in2="hardAlpha" operator="out"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"></feColorMatrix>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_415_477"></feBlend>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_415_477" result="shape"></feBlend>
-                </filter>
-            </defs>
-        </svg>
-    </div>
-</div>
-
-<!-- <div class="auth__characters_block" on:keypress={() => {}} on:click={onSelectChar} class:active={$selectIndex === charid}>
+<div class="auth__characters_block" on:click={onSelectChar} class:active={$selectIndex === charid}>
     <div class="auth__characters_character">
         <div class="box-column">
             <b>{charData.FirstName}</b>
@@ -154,22 +112,22 @@
     <div class="auth__characters_hover">
         {#if char.Data && char.Data.DeleteData === "-"}
             {#if !isDell}
-                <div>{translateText('player2', 'Удалить персонажа')}</div>
-                <div class="main__button_square large box-center" on:keypress={() => {}} on:click={(e) => onDell(e)}>
-                    {translateText('player2', 'Удалить')}
+                <div>Удалить персонажа</div>
+                <div class="main__button_square large box-center" on:click={(e) => onDell(e)}>
+                    Удалить
                 </div>
             {:else}
-                <div>{translateText('player2', 'Вы уверены?')}</div>
-                <div class="main__button_square large box-center" on:keypress={() => {}} on:click={(e) => onDell(e)}>
-                    {translateText('player2', 'Удалить')}
+                <div>Вы уверены?</div>
+                <div class="main__button_square large box-center" on:click={(e) => onDell(e)}>
+                    Удалить
                 </div>
             {/if}
         {:else}
         <div>Удалится через {moment.utc($elapsed).format("DD") -1} дня, {moment.utc($elapsed).format("HH")} часов, {moment.utc($elapsed).format("mm")} минут.</div>
-        <div class="main__button_square large box-center" on:keypress={() => {}} on:click={(e) => onDell(e, true)}>
+        <div class="main__button_square large box-center" on:click={(e) => onDell(e, true)}>
             Отменить
         </div>
         {/if}
     </div>
     {/if}
-</div> -->
+</div>

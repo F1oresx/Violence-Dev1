@@ -43,7 +43,7 @@
     }
 </script>
 
-<div class="auth__box-arrows2">
+<div class="auth__box-arrows">
     <span class="{leftIcon} auth__customization_icon"></span>
     <div class="auth__customization_range">
         <input type="range" id={id} use:createSlider />

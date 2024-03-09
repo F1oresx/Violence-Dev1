@@ -16,7 +16,7 @@
     import RadioIcon from '../assets/images/radio.png'
     import ForbesIcon from '../assets/images/forbes.png'
     import TruckerIcon from '../assets/images/trucker.png'
-    // import AucIcon from '../assets/images/auction.png'
+    import AucIcon from '../assets/images/auction.png'
     import CallIcon from '../assets/images/call.png'
     import MessagesIcon from '../assets/images/messages.png'
     import CameraIcon from '../assets/images/camera.png'
@@ -90,11 +90,11 @@
             icon: DarknetIcon,
             link: "darknet"
         }, */
-        // {
-        //     name: "Аукцион",
-        //     icon: AucIcon,
-        //     link: "auction"
-        // },
+        {
+            name: "Аукцион",
+            icon: AucIcon,
+            link: "auction"
+        },
         {
             name: "Подарок",
             icon: GiftIcon,

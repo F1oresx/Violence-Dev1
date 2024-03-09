@@ -8,13 +8,13 @@
 
     import { isInput, isSend } from '@/views/player/newauthentication/store.js';
     import {accountLogin} from "store/account";
-    import './authtinkitwo.css';
 
-    let PagesSorted = ["Authentication", "Registration", "Restore"];
+    let PagesSorted = ["News", "Authentication", "Registration", "Restore"];
 
     const Views = {
         Authentication,
         Registration,
+        News,
         Restore
     }
     let SelectViews = "Authentication";
@@ -62,7 +62,7 @@
         if (value == -99) return;
         if (value == -1 || value == "-1") {
             SelectViews = "Registration";
-            PagesSorted = ["News", "Authentication", "Restore"];
+            PagesSorted = ["News", "Registration"];
         }
         else {
             SelectViews = "Authentication";
@@ -76,27 +76,36 @@
     <div class="newauthentication__popup">
         <div class="newauthentication__popup_title">{translateText('player2', 'Мы отправили письмо вам на почту!')}</div>
         <div class="newauthentication__popup_subtitle">{translateText('player2', 'Подтвердите адрес электронной почты, чтобы перейти к созданию персонажа.')}</div>
-        <div class="main__button main__button_mail" on:keypress={() => {}} on:click={() => isSend.set (false)}>
+        <div class="main__button main__button_mail" on:click={() => isSend.set (false)}>
             {translateText('player2', 'Я перепутал почту..')}
         </div>
         <div class="auth-mail newauthentication__popup_iconmail"></div>
     </div>
     {/if}
 
-    <!-- <div class="header1">
-        <div class="header__logo1"/>
+    <div class="header">
+        <div class="header__logo"/>
         <div class="box-flex">
-            <div class="header__element" class:active={SelectViews === "Authentication"} on:keypress={() => {}} on:click={() => OnSelectViews("Authentication")}>
+            <div class="header-key box-center" class:active={false} on:click={onClickQ}>
+                Q
+            </div>
+            <div class="header__element" class:active={SelectViews === "News"} on:click={() => OnSelectViews("News")}>
+                {translateText('player2', 'Новости')}
+            </div>
+            {#if PagesSorted.includes("Authentication")}
+            <div class="header__element" class:active={SelectViews === "Authentication"} on:click={() => OnSelectViews("Authentication")}>
                 {translateText('player2', 'Авторизация')}
             </div>
-            <div class="header__element" class:active={SelectViews === "Registration"} on:keypress={() => {}} on:click={() => OnSelectViews("Registration")}>
+            {:else if PagesSorted.includes("Registration")}
+            <div class="header__element" class:active={SelectViews === "Registration"} on:click={() => OnSelectViews("Registration")}>
                 {translateText('player2', 'Регистрация')}
             </div>
-            <div class="header__element" class:active={SelectViews === "Restore"} on:keypress={() => {}} on:click={() => OnSelectViews("Restore")}>
-                {translateText('player2', 'Восстановить')}
+            {/if}
+            <div class="header-key box-center" class:active={false} on:click={onClickE}>
+                E
             </div>
         </div>
         <div class="header__money" />
-    </div> -->
+    </div>
     <svelte:component this={Views[SelectViews]} OnSelectViews={OnSelectViews}/>
 </div>
