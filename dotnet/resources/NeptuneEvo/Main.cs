@@ -857,7 +857,7 @@ namespace NeptuneEvo
                 Timers.Start("envTimer", 1000, () => enviromentChangeTrigger(), true);
                 MoneySystem.Lottery.OnResourceStart();
 
-                var weatherId = 13;//config.TryGet<byte>("Weather", 1);
+                var weatherId = 1;//config.TryGet<byte>("Weather", 1);
                 var dateTime = DateTime.Now;
                 World.Weather.Repository.Init(weatherId, dateTime.Hour, dateTime.Minute);
                 

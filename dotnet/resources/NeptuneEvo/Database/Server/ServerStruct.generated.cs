@@ -374,7 +374,6 @@ namespace Database
 		[Column(),               NotNull              ] public string    SelectedQuest     { get; set; } // varchar(42)
 		[Column("isForbesShow"), NotNull              ] public bool      IsForbesShow      { get; set; } // tinyint(1)
 		[Column(),               NotNull              ] public string    FractionTasksData { get; set; } // varchar(350)
-		[Column("isLucky"),      NotNull              ] public bool      IsLucky           { get; set; } // tinyint(1)
 	}
 
 	[Table("chatcfg")]

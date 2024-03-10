@@ -24,7 +24,7 @@ namespace NeptuneEvo.Fractions
     class Fbi : Script
     {
 
-        public static Vector3 GpsPosition = new Vector3(133.7017, - 711.9227, 275.80142);
+        public static Vector3 GpsPosition = new Vector3(2523.793, -382.1793, 92.9913);
         
         public static Vector3[] fbiCheckpoints = new Vector3[17] 
         { 

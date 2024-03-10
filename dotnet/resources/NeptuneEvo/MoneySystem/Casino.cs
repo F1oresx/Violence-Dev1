@@ -20,16 +20,16 @@ namespace NeptuneEvo.MoneySystem
         public static int[] rednums = new int[18] { 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 }; // Все красные числа на рулетке
         private static Vector3 blipPosition = new Vector3
         (
-            -367.80692, 
-            -241.19814, 
-            36.080067
+            925.3329,
+            46.249912,
+            81.10634
         );
 
         //private static Blip blip;
 
         public static Vector3[] casinoChecks = new Vector3[7]
                 {
-            new Vector3(-367.80692, -241.19814, 36.080067), // Маркер входа с улицы в казино
+            new Vector3(925.3329, 46.249912, 81.10634), // Маркер входа с улицы в казино
             new Vector3(1090.358, 206.7677, -50.11972), // Маркер выхода на улицу из казино
             new Vector3(1110.729, 225.6086, -50.56078), // позиция начала игры в кости
             new Vector3(964.423, 58.9255, 111.4331), // Маркер выхода с крыши казино
@@ -67,7 +67,7 @@ namespace NeptuneEvo.MoneySystem
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(casinoChecks[6].X, casinoChecks[6].Y, casinoChecks[6].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255));
                 NAPI.Marker.CreateMarker(21, casinoChecks[6] + new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 0.8f, new Color(255, 255, 255, 60));*/
 
-                Main.CreateBlip(new Main.BlipData(681, "Казино", blipPosition, 18, true));
+                Main.CreateBlip(new Main.BlipData(679, "Казино", blipPosition, 18, true));
             }
             catch (Exception e)
             {

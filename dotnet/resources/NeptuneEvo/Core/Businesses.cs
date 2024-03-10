@@ -419,7 +419,7 @@ namespace NeptuneEvo.Core
             75, // tattoo-salon
             71, // barber-shop
             362, //463, // masks shop
-            643, // ls customs
+            72, // ls customs
             524, // carwash
             273, // Petshop
             669, // Rare Autoroom
@@ -438,7 +438,7 @@ namespace NeptuneEvo.Core
             9, // tattoo-salon
             4, // barber-shop
             50, // masks shop
-            4, // ls customs
+            85, // ls customs
             3, // carwash
             4, // petshop
             4, // showroom

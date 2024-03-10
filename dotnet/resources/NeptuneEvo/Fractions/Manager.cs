@@ -48,22 +48,22 @@ namespace NeptuneEvo.Fractions
                
                 Main.CreateBlip(new Main.BlipData(459, "News", LsNewsSystem.LSNewsCoords[0], 4, true, 1.3f));
 
-                Main.CreateBlip(new Main.BlipData(621, LangFunc.GetText(LangType.Ru, DataName.Bolnica), Ems.emsCheckpoints[0], 1, true));
+                Main.CreateBlip(new Main.BlipData(61, LangFunc.GetText(LangType.Ru, DataName.Bolnica), Ems.emsCheckpoints[0], 1, true));
                 
-                Main.CreateBlip(new Main.BlipData(60, "FIB", Fbi.GpsPosition, 4, true));
+                Main.CreateBlip(new Main.BlipData(88, "FIB", Fbi.GpsPosition, 4, true));
                 
                 Main.CreateBlip(new Main.BlipData(478, LangFunc.GetText(LangType.Ru, DataName.WarPort), Army.ArmyCheckpoints[2], 52, true));
 
-                Main.CreateBlip(new Main.BlipData(437, "The Families", FractionSpawns[1], 25, true));
-                Main.CreateBlip(new Main.BlipData(437, "The Ballas Gang", FractionSpawns[2], 7, true));
-                Main.CreateBlip(new Main.BlipData(437, "Los Santos Vagos", FractionSpawns[3], 5, true));
-                Main.CreateBlip(new Main.BlipData(437, "Marabunta Grande", FractionSpawns[4], 3, true));
-                Main.CreateBlip(new Main.BlipData(437, "Blood Street", FractionSpawns[5], 1, true));
+                Main.CreateBlip(new Main.BlipData(84, "The Families", FractionSpawns[1], 25, true));
+                Main.CreateBlip(new Main.BlipData(84, "The Ballas Gang", FractionSpawns[2], 7, true));
+                Main.CreateBlip(new Main.BlipData(84, "Los Santos Vagos", FractionSpawns[3], 5, true));
+                Main.CreateBlip(new Main.BlipData(84, "Marabunta Grande", FractionSpawns[4], 3, true));
+                Main.CreateBlip(new Main.BlipData(84, "Blood Street", FractionSpawns[5], 1, true));
 
-                Main.CreateBlip(new Main.BlipData(679, "La Cosa Nostra", FractionSpawns[10], 4, true));
-                Main.CreateBlip(new Main.BlipData(679, "Russian Mafia", FractionSpawns[11], 4, true));
-                Main.CreateBlip(new Main.BlipData(679, "Yakuza", FractionSpawns[12], 4, true));
-                Main.CreateBlip(new Main.BlipData(679, "Armenian Mafia", FractionSpawns[13], 4, true));
+                Main.CreateBlip(new Main.BlipData(78, "La Cosa Nostra", FractionSpawns[10], 81, true));
+                Main.CreateBlip(new Main.BlipData(78, "Russian Mafia", FractionSpawns[11], 4, true));
+                Main.CreateBlip(new Main.BlipData(78, "Yakuza", FractionSpawns[12], 59, true));
+                Main.CreateBlip(new Main.BlipData(78, "Armenian Mafia", FractionSpawns[13], 76, true));
 
                 CreateGarageData();
 
@@ -1265,7 +1265,6 @@ namespace NeptuneEvo.Fractions
             { 69, new FracMatsData(69, "Взломать наручники", "sm-icon-arrested", $"{Main.BlackMarketUnCuff}$") },
             { 78, new FracMatsData(78, "Лицензия на оружие", "inv-item-modifications", $"{Main.BlackMarketGunLic}$") },
             { 79, new FracMatsData(79, "Мед. карта", Chars.Repository.ItemsInfo[ItemId.Note].Icon, $"{Main.BlackMarketMedCard}$") },
-            { 80, new FracMatsData(80, "QR-код", Chars.Repository.ItemsInfo[ItemId.Note].Icon, $"{Main.BlackQrFake}$") },
             { 81, new FracMatsData(81, "Радиоперехватчик", Chars.Repository.ItemsInfo[ItemId.RadioInterceptor].Icon, $"{Main.BlackRadioInterceptord}$") },
 
             //Для фракций

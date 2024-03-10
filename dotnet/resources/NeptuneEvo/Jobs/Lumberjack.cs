@@ -48,26 +48,24 @@ namespace NeptuneEvo.Jobs
         private static List<(string, Vector3)> TreesPositions = new List<(string, Vector3)>()
         {
            
-            ("prop_snow_tree_04_f", new Vector3(-481.63535, -1160.133, 21.63349)), 
-            ("prop_snow_tree_04_f", new Vector3(-464.7431, -1172.6416, 22.41592)), 
-            ("prop_snow_tree_04_f", new Vector3(-468.1925, -1151.3473, 23.663685)), 
-            ("prop_snow_tree_04_f", new Vector3(-476.75443, -1127.6227, 23.67057)), 
-            ("prop_snow_tree_04_f", new Vector3(-490.60272, -1124.4965, 23.138412)), 
-            ("prop_snow_tree_04_f", new Vector3(-458.86343, -1188.6072, 21.689891)),
-            ("prop_snow_tree_04_f", new Vector3(-447.7554, -1182.7928, 22.635908)), 
-            ("prop_snow_tree_04_f", new Vector3(-442.88788, -1196.6096, 22.664852)), 
-            ("prop_snow_tree_04_f", new Vector3(-445.90454, -1151.6956, 23.298677)),  
-            ("prop_snow_tree_04_f", new Vector3(-486.94104, -1143.0538, 23.219059)),
-            ("prop_snow_tree_04_f", new Vector3(-474.45114, -1135.6971, 25.190186)),
-            ("prop_snow_tree_04_f", new Vector3(-456.11792, -1151.8817, 24.563269)),
-            ("prop_snow_tree_04_f", new Vector3(-458.828, -1175.5568, 22.576423)),
-            ("prop_snow_tree_04_f", new Vector3(-450.9154, -1175.1796, 22.51234)),
-            ("prop_snow_tree_04_f", new Vector3(-446.41922, -1166.6053, 23.078728)),
-            ("prop_snow_tree_04_f", new Vector3(-468.37744, -1124.925, 26.565672)),
-            ("prop_snow_tree_04_f", new Vector3(-484.61398, -1153.391, 21.5925)),
-            ("prop_snow_tree_04_f", new Vector3(-460.06134, -1199.1066, 21.20713)),
-            ("prop_snow_tree_04_f", new Vector3(-472.6164, -1182.0721, 20.361935)),
-            ("prop_snow_tree_04_f", new Vector3(-448.71597, -1136.526, 25.326338))
+            ("prop_tree_cedar_02", new Vector3(-632.2686, 5490.49, 52.100124)), 
+            ("prop_tree_cedar_02", new Vector3(-625.3815, 5483.4395, 51.867447)), 
+            ("prop_tree_cedar_02", new Vector3(-611.26044, 5494.1553, 50.82026)), 
+            ("prop_tree_cedar_02", new Vector3(-606.45416, 5503.19, 50.089718)), 
+            ("prop_tree_cedar_02", new Vector3(-601.3574, 5506.9824, 50.213905)), 
+            ("prop_tree_cedar_02", new Vector3(-608.90875, 5517.202, 49.03844)),
+            ("prop_tree_cedar_02", new Vector3(-600.99854, 5523.2793, 49.182735)), 
+            ("prop_tree_cedar_02", new Vector3(-594.38513, 5514.9766, 49.273468)), 
+            ("prop_tree_cedar_02", new Vector3(-593.5654, 5508.7095, 50.812714)),  
+            ("prop_tree_cedar_02", new Vector3(-588.317, 5500.279, 52.60702)),
+            ("prop_tree_cedar_02", new Vector3(-593.59973, 5489.285, 53.438274)),
+            ("prop_tree_cedar_02", new Vector3(-599.56946, 5499.412, 51.681805)),
+            ("prop_tree_cedar_02", new Vector3(-587.8685, 5507.1387, 51.604496)),
+            ("prop_tree_cedar_02", new Vector3(-587.6416, 5522.8276, 49.74528)),
+            ("prop_tree_cedar_02", new Vector3(-652.9118, 5487.7007, 49.838707)),
+            ("prop_tree_cedar_02", new Vector3(-646.7326, 5506.982, 49.499546)),
+            ("prop_tree_cedar_02", new Vector3(-643.9229, 5513.4097, 47.50683)),
+            ("prop_tree_cedar_02", new Vector3(-638.1955, 5520.6406, 44.925476)),
         };
 
         private static List<int> TreeStock = new List<int>()
@@ -91,7 +89,7 @@ namespace NeptuneEvo.Jobs
                     TreesData[i].TreeObject = NAPI.Object.CreateObject(NAPI.Util.GetHashKey(TreesPositions[i].Item1), new Vector3(TreesPositions[i].Item2.X, TreesPositions[i].Item2.Y, TreesPositions[i].Item2.Z - 0.45), new Vector3(0, 0, 0), 255, 0);
                 }
 
-                Main.CreateBlip(new Main.BlipData(468, LangFunc.GetText(LangType.Ru, DataName.LesniyeResi), new Vector3(-490.60272, -1124.4965, 25.138412), 2, true));
+                Main.CreateBlip(new Main.BlipData(468, LangFunc.GetText(LangType.Ru, DataName.LesniyeResi), new Vector3(-621.52527, 5510.284, 50.878937), 2, true));
                /*  Main.CreateBlip(new Main.BlipData(468, LangFunc.GetText(LangType.Ru, DataName.LesniyeResi), new Vector3(3370.0408, 4945.8154, 33.202995), 2, true));
                 Main.CreateBlip(new Main.BlipData(468, LangFunc.GetText(LangType.Ru, DataName.LesniyeResi), new Vector3(-1319.7822, 4444.8164, 23.27308), 2, true));
                 Main.CreateBlip(new Main.BlipData(468, LangFunc.GetText(LangType.Ru, DataName.LesniyeResi), new Vector3(-1988.7891, 2584.667, 3.311179), 2, true));
@@ -100,12 +98,12 @@ namespace NeptuneEvo.Jobs
                 //Main.CreateBlip(new Main.BlipData(569, LangFunc.GetText(LangType.Ru, DataName.SkladLesa), new Vector3(-540.13434, 5380.038, 70.48429), 4, true));
 /*                 Main.CreateBlip(new Main.BlipData(480, LangFunc.GetText(LangType.Ru, DataName.SkladDereva), new Vector3(-575.54004, 5350.516, 70.214424), 70, true));
  */
-                Main.CreateBlip(new Main.BlipData(119, LangFunc.GetText(LangType.Ru, DataName.OhotnMagaz), new Vector3(-758.8592, -618.1002, 30.2762), 21, true));
+                Main.CreateBlip(new Main.BlipData(119, LangFunc.GetText(LangType.Ru, DataName.OhotnMagaz), new Vector3(-353.33633, 5948.7974, 44.221134), 21, true));
 
                 TreeStockLabel = (ExtTextLabel) NAPI.TextLabel.CreateTextLabel(Main.StringToU16(LangFunc.GetText(LangType.Ru, DataName.Hranilishe, TreeStock[0], TreeStock[1], TreeStock[2])), new Vector3(-540.13434, 5380.038, 70.48429), 5F, 0.5F, 0, new Color(255, 255, 255), true, 0);
 
-                PedSystem.Repository.CreateQuest("s_m_y_construct_01", new Vector3(-758.8592, -618.1002, 30.2762), -90.1f, title: LangFunc.GetText(LangType.Ru, DataName.BearGrylls), colShapeEnums: ColShapeEnums.HuntingShop);
-                PedSystem.Repository.CreateQuest("s_m_y_construct_01", new Vector3(-1640.2056, -802.55475, 10.231294), 58.71f, title: LangFunc.GetText(LangType.Ru, DataName.DmitrySkupshik), colShapeEnums: ColShapeEnums.TreesSell);
+                PedSystem.Repository.CreateQuest("s_m_y_construct_01", new Vector3(-353.33633, 5948.7974, 44.221134), -126.760765f, title: LangFunc.GetText(LangType.Ru, DataName.BearGrylls), colShapeEnums: ColShapeEnums.HuntingShop);
+                PedSystem.Repository.CreateQuest("s_m_y_construct_01", new Vector3(-621.52527, 5510.284, 50.878937), 147.03284f, title: LangFunc.GetText(LangType.Ru, DataName.DmitrySkupshik), colShapeEnums: ColShapeEnums.TreesSell);
             }
             catch (Exception e)
             {
@@ -451,8 +449,8 @@ namespace NeptuneEvo.Jobs
                     if (treesData.TreeObject != null && treesData.TreeObject.Exists)  
                         treesData.TreeObject.Delete(); 
                     
-                    treesData.TreeObject = NAPI.Object.CreateObject(NAPI.Util.GetHashKey("prop_tree_stump_01"), new Vector3(TreesPositions[TreeIndex].Item2.X, TreesPositions[TreeIndex].Item2.Y, TreesPositions[TreeIndex].Item2.Z - 0.3), new Vector3(0, 0, 0), 255, 0);
-
+                    /*treesData.TreeObject = NAPI.Object.CreateObject(NAPI.Util.GetHashKey("prop_tree_stump_01"), new Vector3(TreesPositions[TreeIndex].Item2.X, TreesPositions[TreeIndex].Item2.Y, TreesPositions[TreeIndex].Item2.Z - 0.3), new Vector3(0, 0, 0), 255, 0);
+*/
                     var item_chance = new Random().Next(1, 100);
                     var item_type = ItemId.WoodOak;
 
@@ -479,7 +477,7 @@ namespace NeptuneEvo.Jobs
                         Timers.Stop(treesData.RebirthTimer);
                     }
 
-                    treesData.RebirthTimer = Timers.StartOnce($"TreeRebirthTimer{TreeIndex}", 15000, () => TreeRebirthTimerFunction(TreeIndex), true);
+                    treesData.RebirthTimer = Timers.StartOnce($"TreeRebirthTimer{TreeIndex}", 4500, () => TreeRebirthTimerFunction(TreeIndex), true);
                     
                     //BattlePass.Repository.UpdateReward(player, 54);
                 }
