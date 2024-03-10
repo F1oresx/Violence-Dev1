@@ -67,7 +67,7 @@ namespace NeptuneEvo.MoneySystem
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(casinoChecks[6].X, casinoChecks[6].Y, casinoChecks[6].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255));
                 NAPI.Marker.CreateMarker(21, casinoChecks[6] + new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 0.8f, new Color(255, 255, 255, 60));*/
 
-                Main.CreateBlip(new Main.BlipData(679, "Казино", blipPosition, 18, true));
+                Main.CreateBlip(new Main.BlipData(680, "Казино", blipPosition, 18, true));
             }
             catch (Exception e)
             {

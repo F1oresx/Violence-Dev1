@@ -20,10 +20,14 @@ namespace NeptuneEvo.Events
         {
             try
             {
-                CustomColShape.CreateSphereColShape(new Vector3(-488.47617, -401.0276, 34.79613), 7f, 0, ColShapeEnums.EventsMenu);
-                PedSystem.Repository.CreateQuest("a_m_m_afriamer_01", new Vector3(-486.10715, -399.39944, 34.546597), -47.65183f, title: "~y~NPC~w~ Саня\nПрофессиональный игроман");
+                CustomColShape.CreateSphereColShape(new Vector3(-267.17062, -2021.768, 30.145584), 1.2f, 0, ColShapeEnums.EventsMenu);
+                PedSystem.Repository.CreateQuest("s_m_y_dealer_01", new Vector3(-268.73587, -2020.5637, 30.14558), -131.12097f, title: "~y~NPC~w~ Саня\nПрофессиональный игроман");
+
+                CustomColShape.CreateSphereColShape(new Vector3(-262.01532, -2015.8817, 30.145582), 1.2f, 0, ColShapeEnums.EventsMenu);
+                PedSystem.Repository.CreateQuest("s_m_y_dealer_01", new Vector3(-263.49405, -2014.252, 30.145586), -131.12097f, title: "~y~NPC~w~ Саня\nПрофессиональный игроман");
+
                 //NAPI.Marker.CreateMarker(1, new Vector3(-478.86032, -395.27307, 34.027653 - 1.25), new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
-                Main.CreateBlip(new Main.BlipData(491, LangFunc.GetText(LangType.Ru, DataName.Events), new Vector3(-483.149, -400.09946, 34.546608), 6, true));
+                Main.CreateBlip(new Main.BlipData(647, LangFunc.GetText(LangType.Ru, DataName.Events), new Vector3(-266.5274, -2017.2533, 30.145578), 49, true));
             }
             catch (Exception e)
             {

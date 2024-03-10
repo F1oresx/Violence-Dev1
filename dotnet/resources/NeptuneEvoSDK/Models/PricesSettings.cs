@@ -97,8 +97,8 @@ namespace Redage.SDK.Models
         public int UpdateTypeOrganization = 1999; // 1999 RB
         public int UpdateOrganizationLeader = 250; // 1999 RB
         
-        public int AirdropInfoPrice = 25000;
-        public int AirdropOrderPrice = 100000;
+        public int AirdropInfoPrice = 35000000;
+        public int AirdropOrderPrice = 55000000;
         
         public int ZapravkaMinPrice = 2;
         public int ZapravkaMaxPrice = 3;

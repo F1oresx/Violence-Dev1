@@ -142,6 +142,7 @@ namespace NeptuneEvo.Functions
         FracLSNews,
 
         PremiumShop,
+        BackPackShop,
 
         ActionLabelShape,
         BoomboxShape,

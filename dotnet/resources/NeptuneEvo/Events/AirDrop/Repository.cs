@@ -205,7 +205,9 @@ namespace NeptuneEvo.Events.AirDrop
         [ServerEvent(Event.ResourceStart)]
         public void Event_ResourceStart()
         {
-            PedSystem.Repository.CreateQuest("g_m_m_cartelguards_01", new Vector3(-480.33752, -400.36942, 34.5466), 27.42f, title: "~y~NPC~w~ Juan de cartel\nПродавец AirDrop", colShapeEnums: ColShapeEnums.PedAirDrop);
+            Main.CreateBlip(new Main.BlipData(550, LangFunc.GetText(LangType.Ru, DataName.Events), new Vector3(1727.7539, 3326.6416, 41.22348), 49, true));
+            PedSystem.Repository.CreateQuest("a_m_y_soucent_02", new Vector3(1727.7539, 3326.6416, 41.22348), -163.84831f, title: "~y~NPC~w~ Juan de cartel\nПродавец AirDrop", colShapeEnums: ColShapeEnums.PedAirDrop);
+
         }
 
         public static void StartEvent(bool needStart = false, bool needStop = false)

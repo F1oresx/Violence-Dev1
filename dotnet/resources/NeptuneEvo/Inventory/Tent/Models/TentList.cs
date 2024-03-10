@@ -112,7 +112,7 @@ namespace NeptuneEvo.Inventory.Tent.Models
         public static Vector3[] PositionGps = new Vector3[]
         {
             new Vector3(-1682f, -767f, 10f),
-            new Vector3(-2f, -1821f, 29f)
+            new Vector3(2432.7686, 4971.1807, 42.347614)
         };
 
     }

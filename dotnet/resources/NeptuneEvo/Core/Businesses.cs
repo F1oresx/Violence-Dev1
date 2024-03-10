@@ -300,8 +300,10 @@ namespace NeptuneEvo.Core
         {
             try
             {
-                Main.CreateBlip(new Main.BlipData(73, "Premium Clothes Shop", new Vector3(-1126.9141, -1440.1637, 4.108331), 35, true, 1f));
+                Main.CreateBlip(new Main.BlipData(675, "Premium Clothes Shop", new Vector3(-1126.9141, -1440.1637, 4.108331), 35, true, 1f));
                 PedSystem.Repository.CreateQuest("a_m_y_hipster_01", new Vector3(-1126.9141, -1440.1637, 4.108331 + 1.12), -63.85f, title: "~y~NPC~w~ Вовчик", colShapeEnums: ColShapeEnums.PremiumShop);
+                Main.CreateBlip(new Main.BlipData(676, "Магазин Рюкзаков", new Vector3(706.9395, -960.57306, 30.39532), 47, true, 1f));
+                PedSystem.Repository.CreateQuest("cs_lestercrest", new Vector3(706.9395, -960.57306, 30.39532), -98.25f, title: "~y~NPC~w~ Lester", colShapeEnums: ColShapeEnums.BackPackShop);
 
                 using MySqlCommand cmd = new MySqlCommand()
                 {
@@ -386,7 +388,7 @@ namespace NeptuneEvo.Core
         public static ConcurrentDictionary<int, Business> BizList = new ConcurrentDictionary<int, Business>();
         public static ConcurrentDictionary<int, int> Orders = new ConcurrentDictionary<int, int>(); // key - ID заказа, value - ID бизнеса
 
-        public static string[] BusinessTypeNames = new string[16]
+        public static string[] BusinessTypeNames = new string[17]
         {
             "24/7", // 0
             "Petrol Station", // 1
@@ -404,8 +406,9 @@ namespace NeptuneEvo.Core
             "CarWash", // 13
             "PetShop", // 14
             "Elite Autoroom", // 15
+            "BackPack Shop" // 16
         };
-        public static int[] BlipByType = new int[16]
+        public static int[] BlipByType = new int[17]
         {
             52, // 24/7
             361, // petrol station
@@ -423,8 +426,9 @@ namespace NeptuneEvo.Core
             524, // carwash
             273, // Petshop
             669, // Rare Autoroom
+            676, // BackPack Shop
         };
-        public static int[] BlipColorByType = new int[16]
+        public static int[] BlipColorByType = new int[17]
         {
             4, // 24/7
             35, //76, // petrol station
@@ -442,6 +446,7 @@ namespace NeptuneEvo.Core
             3, // carwash
             4, // petshop
             4, // showroom
+            32, // BackPack Shop
         };
 
         public static string[] PetNames = new string[9]
@@ -2023,7 +2028,7 @@ namespace NeptuneEvo.Core
                 {
                     foreach (var clothId in dellClothes)
                     {
-                        if (realClothes.Contains(clothId)) 
+                        if (realClothes.Contains(clothId))
                             realClothes.Remove(clothId);
                     }
                 }
@@ -2031,11 +2036,10 @@ namespace NeptuneEvo.Core
                 {
                     foreach (var clothId in addClothes)
                     {
-                        if (!realClothes.Contains(clothId)) 
+                        if (!realClothes.Contains(clothId))
                             realClothes.Add(clothId);
                     }
                 }
-
                 var clothesPriceList = !isDonate ? ClothesComponents.ClothesComponentPriceData[characterData.Gender] : ClothesComponents.ClothesComponentDonateData[characterData.Gender];
                 var dataJson = new Dictionary<string, List<List<object>>>();
                 foreach (var name in realClothes.ToList())

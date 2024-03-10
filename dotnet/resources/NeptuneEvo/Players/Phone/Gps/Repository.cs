@@ -174,8 +174,8 @@ namespace NeptuneEvo.Players.Phone.Gps
             
             
             funCategory.Items.Add(new GpsItem("Казино", -367.80692f, -241.19814f));
-            funCategory.Items.Add(new GpsItem("Арена 3 в 1", -483.149f, -400.09946f));
-            funCategory.Items.Add(new GpsItem("AirDrop", -483.149f, -400.09946f));
+            funCategory.Items.Add(new GpsItem("Арена 3 в 1", -266.5274f, -2017.2533f));
+            funCategory.Items.Add(new GpsItem("AirDrop", 1727.7539f, 3326.6416f));
             funCategory.Items.Add(new GpsItem("Начальные квесты", -480.28732f, -305.2201f));
            // funCategory.Items.Add(new GpsItem("Клуб Diamond", 945.4526f, 16.871f));
             funCategory.Items.Add(new GpsItem("Клуб Vanilla", 141.3792f, -1281.576f));
@@ -281,7 +281,7 @@ namespace NeptuneEvo.Players.Phone.Gps
             licensesCategory.Icon = "licenses";
             licensesCategory.Items = new List<GpsItem>();
 
-            licensesCategory.Items.Add(new GpsItem("Центр занятости", 418.70874f, -624.9391f));
+            /*licensesCategory.Items.Add(new GpsItem("Центр занятости", 418.70874f, -624.9391f));*/
             licensesCategory.Items.Add(new GpsItem("Электростанция", 724.9625f, 133.9959f));
             licensesCategory.Items.Add(new GpsItem("Отделение почты", 133.0764f, 96.67652f));
             licensesCategory.Items.Add(new GpsItem("Стоянка газонокосилок", -1330.482f, 42.12986f));
@@ -322,7 +322,7 @@ namespace NeptuneEvo.Players.Phone.Gps
             clubsCategory.Items.Add(new GpsItem("Главный рынок", Inventory.Tent.Models.TentList.PositionGps[0].X, Inventory.Tent.Models.TentList.PositionGps[0].Y));
             clubsCategory.Items.Add(new GpsItem("Черный рынок", Inventory.Tent.Models.TentList.PositionGps[1].X, Inventory.Tent.Models.TentList.PositionGps[1].Y));
             clubsCategory.Items.Add(new GpsItem("Церковь", -779.12885f, -709.137f));
-            clubsCategory.Items.Add(new GpsItem("Продавец питомцев", 268.109f, -641.3529f));
+/*            clubsCategory.Items.Add(new GpsItem("Продавец питомцев", 268.109f, -641.3529f));*/
             clubsCategory.Items.Add(new GpsItem("Суд", 243.40225f, -1073.7192f));
             clubsCategory.Items.Add(new GpsItem("Риэлторское агентство", -710.49f, 267.8656f));
             clubsCategory.Items.Add(new GpsItem("Мебельный магазин", Houses.FurnitureManager.FurnitureBuyPos.X, Houses.FurnitureManager.FurnitureBuyPos.Y));

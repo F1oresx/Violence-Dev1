@@ -597,7 +597,7 @@ namespace NeptuneEvo.Core
             //new RentZoneData(28, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(-389.61102, -196.51826, 36.54216), -159.795135f, RentCarId.Civilian),
             //new RentZoneData(29, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(1695.415, 4785.0933, 41.996357), 52.643776f, RentCarId.Civilian),
 
-            new RentZoneData(30, "ig_siemonyetarian", LangFunc.GetText(LangType.Ru, DataName.TaxiRent), new Vector3(894.88727, -179.18213, 74.70027), 70.70735f, RentCarId.JobTaxi),
+            new RentZoneData(30, "ig_siemonyetarian", LangFunc.GetText(LangType.Ru, DataName.TaxiRent), new Vector3(894.88727, -179.18213, 74.70027), -119.26647f, RentCarId.JobTaxi),
             new RentZoneData(31, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.LandmowerRent), new Vector3(-1330.482, 42.12986, 53.48915), 0.0f, RentCarId.JobLawnmower),
             new RentZoneData(32, "ig_trafficwarden", LangFunc.GetText(LangType.Ru, DataName.BusRent), new Vector3(438.41052, -624.48535, 28.708742), 88.11559f, RentCarId.JobBus),
             new RentZoneData(33, "s_m_y_winclean_01", LangFunc.GetText(LangType.Ru, DataName.FuraRent), new Vector3(1192.452, -3252.6602, 6.0287685), 88.67709f, RentCarId.JobTrucker),
@@ -649,7 +649,7 @@ namespace NeptuneEvo.Core
 
         private static IReadOnlyDictionary<RentCarId, RentBlipData> RentBlipsData = new Dictionary<RentCarId, RentBlipData>()
         {
-            { RentCarId.Civilian, new RentBlipData(76, LangFunc.GetText(LangType.Ru, DataName.CarRent), 9) },
+            { RentCarId.Civilian, new RentBlipData(811, LangFunc.GetText(LangType.Ru, DataName.CarRent), 9) },
             { RentCarId.Cycling, new RentBlipData(512, LangFunc.GetText(LangType.Ru, DataName.BikeRent), 9) },
             { RentCarId.OffRoad, new RentBlipData(757, LangFunc.GetText(LangType.Ru, DataName.OffRoadRent), 9) },
             { RentCarId.WaterBased, new RentBlipData(76, LangFunc.GetText(LangType.Ru, DataName.BoatRent), 9) },
