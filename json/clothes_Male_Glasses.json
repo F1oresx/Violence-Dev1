@@ -34,13 +34,12 @@
 	"32": {"Id":32,"Variation":32,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9,10,11]},
 	"33": {"Id":33,"Variation":33,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9,10,11]},
 	"34": {"Id":34,"Variation":53,"TName":"","Textures":[0]},
-	"35": {"Id":35,"Variation":54,"TName":"","Textures":[0,1,2,3,4,5,6,7]},
-	"36": {"Id":36,"Variation":55,"TName":"","Textures":[0]},
-	"37": {"Id":37,"Variation":56,"TName":"","Textures":[0]},
-	"38": {"Id":38,"Variation":57,"TName":"","Textures":[0]},
-	"39": {"Id":39,"Variation":58,"TName":"","Textures":[0]},
-	"40": {"Id":40,"Variation":59,"TName":"","Textures":[0]},
-	"41": {"Id":41,"Variation":60,"TName":"","Textures":[0,1,2]},
-	"42": {"Id":42,"Variation":61,"TName":"","Textures":[0,1,2,3,4,5,6]},
-	"43": {"Id":43,"Variation":62,"TName":"","Textures":[0]}
+	"35": {"Id":35,"Variation":52,"TName":"","Textures":[0]},
+	"36": {"Id":36,"Variation":53,"TName":"","Textures":[0,1,2,3,4,5,6,7]},
+	"37": {"Id":37,"Variation":65,"TName":"","Textures":[0,1,2,3,4,5,6,7,8,9,10,11]},
+	"38": {"Id":38,"Variation":70,"TName":"","Textures":[0]},
+	"39": {"Id":39,"Variation":71,"TName":"","Textures":[0]},
+	"40": {"Id":40,"Variation":72,"TName":"","Textures":[0]},
+	"41": {"Id":41,"Variation":73,"TName":"","Textures":[0]},
+	"42": {"Id":42,"Variation":75,"TName":"","Textures":[0,1,2,3,4,5,6,7]}
 }
