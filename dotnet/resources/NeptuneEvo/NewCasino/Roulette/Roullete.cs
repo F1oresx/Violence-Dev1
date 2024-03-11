@@ -25,7 +25,7 @@ namespace NeptuneEvo.NewCasino
         /// <summary>
         /// Время, которое дается на ставку (в данном случае - 45 секунд)
         /// </summary>
-        private static int Timeout = 15;
+        private static int Timeout = 10;
 
         private static readonly nLog Log = new nLog("NewCasino.Roullete");
 

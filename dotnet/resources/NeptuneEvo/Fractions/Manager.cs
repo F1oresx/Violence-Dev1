@@ -457,11 +457,11 @@ namespace NeptuneEvo.Fractions
         
         public static IReadOnlyDictionary<int, Vector3> FractionSpawns = new Dictionary<int, Vector3>()
         {
-            {(int) Models.Fractions.FAMILY, new Vector3(-199.28838, -1584.5262, 35)},    // The Families
-            {(int) Models.Fractions.BALLAS, new Vector3(119.04292, -1966.3086, 21.31)},     // The Ballas Gang
-            {(int) Models.Fractions.VAGOS, new Vector3(1403.206, -1483.664, 60.63504)},     // Los Santos Vagos
-            {(int) Models.Fractions.MARABUNTA, new Vector3(949.50433, -2151.384, 31.269314)},     // Marabunta Grande
-            {(int) Models.Fractions.BLOOD, new Vector3(489.85736, -1528.8881, 23.271452)},     // Blood Street
+            {(int) Models.Fractions.FAMILY, new Vector3(-231.10863, -1498.224, 37.74691)},    // The Families
+            {(int) Models.Fractions.BALLAS, new Vector3(-73.46643, -1820.7938, 27.600496)},     // The Ballas Gang
+            {(int) Models.Fractions.VAGOS, new Vector3(960.79285, -1815.0747, 32.903084)},     // Los Santos Vagos
+            {(int) Models.Fractions.MARABUNTA, new Vector3(1006.7682, -2533.977, 30.161648)},     // Marabunta Grande
+            {(int) Models.Fractions.BLOOD, new Vector3(496.87155, -1315.7386, 29.977993)},     // Blood Street
             {(int) Models.Fractions.CITY, new Vector3(-1300.3295, -559.02313, 30.56686)},      // Cityhall
             {(int) Models.Fractions.POLICE, new Vector3(458.25644, -999.1341, 30.689493)},      // LSPD police
             {(int) Models.Fractions.EMS, new Vector3(322.68, -592.2, 43.2)},      // Emergency care
@@ -471,7 +471,7 @@ namespace NeptuneEvo.Fractions
             {(int) Models.Fractions.YAKUZA, new Vector3( -1464.758, -34.101257, 55.20967)},    // Yakuza 
             {(int) Models.Fractions.ARMENIAN, new Vector3(-1809.738, 444.3138, 129.3889)},    // Armenian Mafia 
             {(int) Models.Fractions.ARMY, new Vector3(-2361.488, 3208.3765, 29.224823)},    // Army
-            {(int) Models.Fractions.LSNEWS, new Vector3(-563.7617, -934.2492, 23.866652)},    // LSNews -1063.046, -249.463, 44.0211
+            {(int) Models.Fractions.LSNEWS, new Vector3(-1063.046, -249.463, 44.0211)},    // LSNews -1063.046, -249.463, 44.0211
             {(int) Models.Fractions.THELOST, new Vector3(982.2743, -104.14917, 73.72877)},    // The Lost
             {(int) Models.Fractions.MERRYWEATHER, new Vector3(2154.641, 2921.034, -63.02243)},    // Merryweather
             //{(int) Models.Fractions.SHERIFF, new Vector3(1849.4763, 3695.783, 34.266933)},    // SHERIFF

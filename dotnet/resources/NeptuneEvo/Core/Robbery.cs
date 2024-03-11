@@ -297,10 +297,10 @@ namespace NeptuneEvo.Core
 
                 for (int b = 0; b < salutePoints.Count; b++)
                 {
-                    PedSystem.Repository.CreateQuest("ig_ramp_hic", salutePoints[b], 105.93525f, 0, title: "~y~NPC~w~ Сергей\nПродавец фейерверков", colShapeEnums: ColShapeEnums.SaluteShop);
+                 //   PedSystem.Repository.CreateQuest("ig_ramp_hic", salutePoints[b], 105.93525f, 0, title: "~y~NPC~w~ Сергей\nПродавец фейерверков", colShapeEnums: ColShapeEnums.SaluteShop);
                     //CustomColShape.CreateCylinderColShape(salutePoints[b], 1.5F, 2, 0, ColShapeEnums.SaluteShop);
 
-                    Main.CreateBlip(new Main.BlipData(654, "Салют", salutePoints[b], 32, true));
+                 //  Main.CreateBlip(new Main.BlipData(654, "Салют", salutePoints[b], 32, true));*/
 
                     //NAPI.TextLabel.CreateTextLabel(Main.StringToU16($"Нажмите \n'Взаимодействие'\n~g~{saluteBotName[b]}"), salutePoints[b] + new Vector3(0, 0, 1.125), 5F, 0.8F, 0, new Color(255, 255, 255));
                 }

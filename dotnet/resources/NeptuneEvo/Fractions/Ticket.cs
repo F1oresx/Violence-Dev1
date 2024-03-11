@@ -82,13 +82,13 @@ namespace NeptuneEvo.Fractions
                 new Color(255, 255, 255, 220));
             
             //
-            PedSystem.Repository.CreateQuest("s_m_m_ciasec_01", PedPos, PedRot, questName: QuestName, title: "~y~NPC~w~ Роберт\nСотрудник полиции", colShapeEnums: ColShapeEnums.ImpoundLotPed, pedBlipData: new PedBlipData
-            {
-                BlipId = 783,
-                BlipName = "Штрафстоянка",
-                BlipColor = 59
-
-            });
+           // PedSystem.Repository.CreateQuest("s_m_m_ciasec_01", PedPos, PedRot, questName: QuestName, title: "~y~NPC~w~ Роберт\nСотрудник полиции", colShapeEnums: ColShapeEnums.ImpoundLotPed, pedBlipData: new PedBlipData
+          //  {
+          //     BlipId = 783,
+          //    BlipName = "Штрафстоянка",
+          //    BlipColor = 59
+          //
+          //  });
         
         }
         [Interaction(ColShapeEnums.ImpoundLot, In: true)]

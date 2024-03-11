@@ -551,10 +551,10 @@ namespace NeptuneEvo.Core
             new RentCarSpawn(58, new Vector3(416.27982, -649.317, 28.283028), new Vector3(-4.6620817, 4.7889757, 89.40946)),
             new RentCarSpawn(58, new Vector3(416.46463, -654.5794, 28.281485), new Vector3(-4.6620817, 4.7889757, 89.40946)),
             //
-            new RentCarSpawn(59, new Vector3(-472.08853, -312.73453, 34.352623), new Vector3(2.2234323, 0.110054456, 22.536076)),
-            new RentCarSpawn(59, new Vector3(-469.5927, -311.55832, 34.356796), new Vector3(2.2234323, 0.110054456, 22.536076)),
-            new RentCarSpawn(59, new Vector3(-481.6924, -316.39682, 34.369534), new Vector3(2.2234323, 0.110054456, 22.536076)),
-            new RentCarSpawn(59, new Vector3(-479.127, -315.04065, 34.377766), new Vector3(2.2234323, 0.110054456, 22.536076)),
+            new RentCarSpawn(59, new Vector3(-534.8054, -271.88193, 35.473854), new Vector3(-0.8126405, 0.0026157757, 111.7708)),
+            new RentCarSpawn(59, new Vector3(-529.0308, -269.516, 35.53325), new Vector3(-0.8274042, 0.0396485, 113.040886)),
+            new RentCarSpawn(59, new Vector3(-523.3113, -267.20734, 35.59737), new Vector3(-0.81597126, -0.039431088, 111.99651)),
+            new RentCarSpawn(59, new Vector3(-517.0992, -264.84003, 35.665768), new Vector3(-1.2772774, 0.10784622, 111.904594)),
             
             //
             new RentCarSpawn(60, new Vector3(-229.7352, -2655.4016, 5.561528), new Vector3(0.2472642, 0.0266275, -1.2886565)),
@@ -629,7 +629,7 @@ namespace NeptuneEvo.Core
             new RentZoneData(57, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(1389.4164, -2073.133, 51.99858), 53.371437f, RentCarId.Civilian),
             //
             new RentZoneData(58, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.FurgonRent2), new Vector3(437.9226, -621.9111, 28.7092), 83.0f, RentCarId.JobPostman),
-            new RentZoneData(59, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(-478.59937, -304.3146, 35.113594), -157f, RentCarId.Civilian),
+            new RentZoneData(59, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(-525.668, -266.15607, 35.29008), -157f, RentCarId.Civilian),
             new RentZoneData(60, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(-227.15689, -2666.8054, 6.0002985),  7.2f, RentCarId.Civilian), // НУПАУАУАУ
           //  new RentZoneData(61, "a_m_y_genstreet_01", LangFunc.GetText(LangType.Ru, DataName.CarRent), new Vector3(-2334.4495, 3422.5938, 29.965755), 104.25f, RentCarId.Civilian),
         };
@@ -658,13 +658,13 @@ namespace NeptuneEvo.Core
             //{ RentCarId.Holiday, new RentBlipData(747, LangFunc.GetText(LangType.Ru, DataName.EventRent), 9) },
             //{ RentCarId.Elite, new RentBlipData(633, LangFunc.GetText(LangType.Ru, DataName.EliteRent), 9) },
             //{ RentCarId.Rally, new RentBlipData(726, LangFunc.GetText(LangType.Ru, DataName.RaceRent), 9) },
-           { RentCarId.JobTaxi, new RentBlipData(56, LangFunc.GetText(LangType.Ru, DataName.Taxi), 5) },
-            { RentCarId.JobLawnmower, new RentBlipData(109, LangFunc.GetText(LangType.Ru, DataName.Landmower), 4) },
+            /*{ RentCarId.JobTaxi, new RentBlipData(56, LangFunc.GetText(LangType.Ru, DataName.Taxi), 5) },*/
+/*            { RentCarId.JobLawnmower, new RentBlipData(109, LangFunc.GetText(LangType.Ru, DataName.Landmower), 4) },
             { RentCarId.JobBus, new RentBlipData(513, LangFunc.GetText(LangType.Ru, DataName.Bus), 4) },
             { RentCarId.JobTrucker, new RentBlipData(477, LangFunc.GetText(LangType.Ru, DataName.Gruzovik), 4) },
             { RentCarId.JobCollector, new RentBlipData(2, LangFunc.GetText(LangType.Ru, DataName.Inkass), 63) },
             { RentCarId.JobMechanic, new RentBlipData(85, LangFunc.GetText(LangType.Ru, DataName.Mechanik), 71) },
-            { RentCarId.JobPostman, new RentBlipData(2, LangFunc.GetText(LangType.Ru, DataName.Postman), 4) },
+            { RentCarId.JobPostman, new RentBlipData(2, LangFunc.GetText(LangType.Ru, DataName.Postman), 4) },*/
         };
 
         private static Dictionary<int, int> PedsToRentCarId = new Dictionary<int, int>();

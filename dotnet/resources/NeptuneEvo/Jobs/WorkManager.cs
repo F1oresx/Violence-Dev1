@@ -37,7 +37,7 @@ namespace NeptuneEvo.Jobs
 
                 // blips
 
-                Main.CreateBlip(new Main.BlipData(354, LangFunc.GetText(LangType.Ru, DataName.Electrostanciya), new Vector3(724.9625, 133.9959, 79.83643), 70, true, 1.2f));
+                /*Main.CreateBlip(new Main.BlipData(354, LangFunc.GetText(LangType.Ru, DataName.Electrostanciya), new Vector3(724.9625, 133.9959, 79.83643), 70, true, 1.2f));*/
 
             }
             catch (Exception e)
@@ -58,7 +58,7 @@ namespace NeptuneEvo.Jobs
         };
         public static SortedList<int, Vector3> Points = new SortedList<int, Vector3>
         {
-            {0, new Vector3(436.5074, -627.4617, 28.70753) },  // Employment center
+            {0, new Vector3(-555.77936, -185.77113, 38.221073) },  // Employment center
             {1, new Vector3(724.9625, 133.9959, 79.83643) },  // Electrician job
             {2, new Vector3(436.5074, -627.4617, 28.707539) },  // Postal job
             {3, new Vector3(436.5074, -627.4617, 28.707539) },      // Taxi job
@@ -118,12 +118,12 @@ namespace NeptuneEvo.Jobs
         public static SortedList<int, int> JobsMinLvl = new SortedList<int, int>()
         {
             { (int) JobsId.Electrician, 0 },
-            { (int) JobsId.Postman, 2 },
-            { (int) JobsId.Taxi, 2 },
+            { (int) JobsId.Postman, 1 },
+            { (int) JobsId.Taxi, 1 },
             { (int) JobsId.Bus, 1 },
             { (int) JobsId.Lawnmower, 0 },
-            { (int) JobsId.Trucker, 4 },
-            { (int) JobsId.CashCollector, 3 },
+            { (int) JobsId.Trucker, 5 },
+            { (int) JobsId.CashCollector, 4 },
             { (int) JobsId.CarMechanic, 2 },
         };
         public static void JobJoin(ExtPlayer player, int job)
