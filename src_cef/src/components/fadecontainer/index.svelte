@@ -3,7 +3,7 @@
     import './main.sass'
     let inDuration = 0;
     let outDuration = 0;
-    let visible = true;
+    let visible = false;
     let textInfo = true;
 
     window.FadeScreen = (toggled, speed) => {

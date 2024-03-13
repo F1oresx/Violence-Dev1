@@ -22,6 +22,7 @@ using NeptuneEvo.Organizations.Player;
 using NeptuneEvo.Players.Phone.Messages.Models;
 using NeptuneEvo.Quests.Models;
 using NeptuneEvo.VehicleData.LocalData.Models;
+using Ubiety.Dns.Core;
 
 namespace NeptuneEvo.Events.AirDrop
 {
@@ -198,9 +199,9 @@ namespace NeptuneEvo.Events.AirDrop
         }
         };
 
-        private static int minMinutes = 11;
-        private static int maxMinutes = 20;
-        private static int notificationMinutes = 10;
+        private static int minMinutes = 1;
+        private static int maxMinutes = 5;
+        private static int notificationMinutes = 2;
 
         [ServerEvent(Event.ResourceStart)]
         public void Event_ResourceStart()
@@ -227,7 +228,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                     var rand = new Random();
 
-                    var dropCount = 3;
+                    var dropCount = 1;
                     var location = rand.Next(0, 9);
                     var dropLocation = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
@@ -278,8 +279,8 @@ namespace NeptuneEvo.Events.AirDrop
             var rand = new Random();
             // 100%:
             Chars.Repository.AddNewItem(null, locationName, location, ItemId.Revolver, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
-            Chars.Repository.AddNewItem(null, locationName, location, ItemId.AssaultRifleMk2, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
-            Chars.Repository.AddNewItem(null, locationName, location, ItemId.BodyArmor, rand.Next(20, 40), $"100", true, 100);
+            Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarbineRifle, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
+            Chars.Repository.AddNewItem(null, locationName, location, ItemId.BodyArmor, rand.Next(20, 40), $"50", true, 100);
 
             for (int item = 0; item < rand.Next(5, 10); item++)
                 Chars.Repository.AddNewItem(null, locationName, location, ItemId.Drugs, 50);
@@ -291,8 +292,6 @@ namespace NeptuneEvo.Events.AirDrop
             {
                 for (int item = 0; item < rand.Next(5, 10); item++)
                 {
-                    Clothes maskRand = Customization.Masks[rand.Next(0, Customization.Masks.Count)];
-                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.Mask, 1, $"{maskRand.Variation}_{maskRand.Colors[0]}_True");
                 }
             }
             else if (item_chance >= 70) Chars.Repository.AddNewItem(null, locationName, location, ItemId.APPistol, rand.Next(5, 10), WeaponRepository.GetAirdropSerial(), true, 100);
@@ -304,9 +303,9 @@ namespace NeptuneEvo.Events.AirDrop
             else if (item_chance >= 50) Chars.Repository.AddNewItem(null, locationName, location, ItemId.Gusenberg, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
             else if (item_chance >= 40)
             {
-                Chars.Repository.AddNewItem(null, locationName, location, ItemId.SniperRifle, rand.Next(1, 5), WeaponRepository.GetAirdropSerial(), true, 100);
+                Chars.Repository.AddNewItem(null, locationName, location, ItemId.HealthKit, rand.Next(1, 5), WeaponRepository.GetAirdropSerial(), true, 100);
                 Chars.Repository.AddNewItem(null, locationName, location, ItemId.AssaultShotgun, rand.Next(2, 5), WeaponRepository.GetAirdropSerial(), true, 100);
-                Chars.Repository.AddNewItem(null, locationName, location, ItemId.TacticalRifle, rand.Next(2, 4), WeaponRepository.GetAirdropSerial(), true, 100);
+                Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarbineRifleMk2, rand.Next(2, 4), WeaponRepository.GetAirdropSerial(), true, 100);
 
             }
             else if (item_chance >= 18)
@@ -314,16 +313,15 @@ namespace NeptuneEvo.Events.AirDrop
                 if (item_chance >= 30)
                 {
                     Chars.Repository.AddNewItem(null, locationName, location, ItemId.MarksmanRifle, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
-                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.Wrench, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
+                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.Knife, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
                 }
                 
                 for (var item = 0; item < rand.Next(10, 20); item++)
-                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.Material, 250);
+                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.Material, 399);
 
                 for (var item = 0; item < rand.Next(10, 30); item++)
                     Chars.Repository.AddNewItem(null, locationName, location, ItemId.HealthKit, 10);
             }
-            else if (item_chance >= 15) Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarCoupon, 1, "Phoenix");
             else if (item_chance >= 3)
             {
                 Chars.Repository.AddNewItem(null, locationName, location, ItemId.CombatMG, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
@@ -331,14 +329,10 @@ namespace NeptuneEvo.Events.AirDrop
                 Chars.Repository.AddNewItem(null, locationName, location, ItemId.HeavyShotgun, rand.Next(2, 4), WeaponRepository.GetAirdropSerial(), true, 100);
                 Chars.Repository.AddNewItem(null, locationName, location, ItemId.HeavySniper, rand.Next(1, 3), WeaponRepository.GetAirdropSerial(), true, 100);
                 
-                if (item_chance >= 7)
-                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.MarksmanPistol, rand.Next(1, 2), WeaponRepository.GetAirdropSerial(), true, 100);
-                
-                if (item_chance >= 8 && item_chance < 10) Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarCoupon, 1, "Neon");
-                else if (item_chance >= 6 && item_chance < 8) Chars.Repository.AddNewItem(null, locationName, location, ItemId.Mask, rand.Next(1, 2), "197_8_True");
+                if (item_chance >= 5)
+                    Chars.Repository.AddNewItem(null, locationName, location, ItemId.SpecialCarbineMk2, rand.Next(1, 2), WeaponRepository.GetAirdropSerial(), true, 100);
+                   /* Chars.Repository.AddNewItem(null, locationName, location, ItemId., rand.Next(1, 2), WeaponRepository.GetAirdropSerial(), true, 100);*/
             }
-            else if (item_chance == 2) Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarCoupon, 1, "Rapidgt3");
-            else if (item_chance == 1) Chars.Repository.AddNewItem(null, locationName, location, ItemId.CarCoupon, 1, "Ferrari488");
         }
 
         public static void StopAirDropEvent()
@@ -361,7 +355,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                         Trigger.ClientEvent(foreachPlayer, "client.blipZone.remove");
                         Trigger.ClientEvent(foreachPlayer, "phone.notify", (int) DefaultNumber.Informer, $"Хола! По моим каналам прошла инфа, что AirDrop закончился. Надеюсь, у тебя всё чики-пуки, до новых встреч!", 15);
-                        if (foreachPlayer.Dimension == 100)
+                        if (foreachPlayer.Dimension == 0)
                         {
                             Trigger.Dimension(foreachPlayer);
                             foreachSessionData.IsInAirDropZone = false;
@@ -471,7 +465,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                     foreach (ExtPlayer foreachPlayer in Character.Repository.GetPlayers())
                     {
-                        if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 100) continue;
+                        if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 0) continue;
                         Trigger.ClientEvent(foreachPlayer, "airdrop.updateTeamsInfo", JsonConvert.SerializeObject(TeamsInfo.OrderBy(u => u.Value.TeamFrags).Reverse()));
                     }
                 }
@@ -492,7 +486,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                     foreach (var foreachPlayer in Character.Repository.GetPlayers())
                     {
-                        if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 100) continue;
+                        if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 0) continue;
                         Trigger.ClientEvent(foreachPlayer, "airdrop.updateTeamsInfo", JsonConvert.SerializeObject(TeamsInfo.OrderBy(u => u.Value.TeamFrags).Reverse()));
                     }
 
@@ -569,7 +563,7 @@ namespace NeptuneEvo.Events.AirDrop
                         {
                             int hack_chance = new Random().Next(1, 101);
 
-                            if (hack_chance <= 50)
+                            if (hack_chance <= 30)
                             {
                                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.SucZamok), 3000);
                                 var position = airDropData.Position;
@@ -1011,7 +1005,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                 foreach (ExtPlayer foreachPlayer in Character.Repository.GetPlayers())
                 {
-                    if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 100) continue;
+                    if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 0) continue;
                     Trigger.ClientEvent(foreachPlayer, "airdrop.updateTeamsInfo", JsonConvert.SerializeObject(TeamsInfo.OrderBy(u => u.Value.TeamFrags).Reverse()));
                 }
             }
@@ -1040,7 +1034,7 @@ namespace NeptuneEvo.Events.AirDrop
 
                 foreach (ExtPlayer foreachPlayer in Character.Repository.GetPlayers())
                 {
-                    if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 100) continue;
+                    if (!IsPlayerToEvents(foreachPlayer) || foreachPlayer.Dimension != 0) continue;
                     Trigger.ClientEvent(foreachPlayer, "airdrop.updateTeamsInfo", JsonConvert.SerializeObject(TeamsInfo.OrderBy(u => u.Value.TeamFrags).Reverse()));
                 }
 

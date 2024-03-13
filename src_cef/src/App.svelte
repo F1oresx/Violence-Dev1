@@ -202,7 +202,7 @@
 	}
 	
 	//window.router.setView("PlayerAuthentication")
-	window.router.setHud()
+	//window.router.setHud()
 	//window.router.setView("FractionsCreate")
 	//window.router.close()
 	//window.router.updateStatic("PlayerGameMenu");
@@ -265,7 +265,7 @@
 			isInputToggled.set(true)
 		} else {
 			//window.router.close ();
-			window.router.setView('PlayerAuthentication');
+			//window.router.setView('PlayerAuthentication');
 		}
 	});
 	//window.router.updateStatic("PlayerGameMenu", [{ActorName:"", Line:""}])

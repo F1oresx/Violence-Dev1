@@ -6,10 +6,10 @@ let last_pausemenustatus = false;
 let last_cursorstate = false;
 let last_warningactive = false;
 //mp.gui.chat.show(false);
-let main_browser = null;
-//main_browser.reload(true);
-//const main_browser = mp.browsers.new("package://interface/index.html");
-//main_browser.markAsChat();
+global.main_browser = null;
+//global.main_browser.reload(true);
+//const global.main_browser = mp.browsers.new("package://interface/index.html");
+//global.main_browser.markAsChat();
 
 
 //package://interface/local.html
@@ -27,11 +27,11 @@ gm.events.add('client.init', async (serverId) => {
 
 	mp.gui.chat.show(false);
 
-	if (main_browser !== null)
-		main_browser.destroy();
+	if (global.main_browser !== null)
+		global.main_browser.destroy();
 
-	main_browser = mp.browsers.new(getInterfaceUrl (serverId));
-	main_browser.markAsChat();
+	global.main_browser = mp.browsers.new(getInterfaceUrl (serverId));
+	global.main_browser.markAsChat();
 });
 
 mp.gui.emmit = (execute, log = 0) => {
@@ -39,12 +39,12 @@ mp.gui.emmit = (execute, log = 0) => {
 	{
 		if (log) {
 			const text = `[cef debug] ${execute}`;
-			if (cefInit) main_browser.execute(`console.log(${JSON.stringify(text)})`);
+			if (cefInit) global.main_browser.execute(`console.log(${JSON.stringify(text)})`);
 			else cefInitData.push(`console.log(${JSON.stringify(text)})`);
 			//if (cefInit) 
 			//	mp.gui.chat.push(text);
 		}
-		if (cefInit) main_browser.execute (execute);
+		if (cefInit) global.main_browser.execute (execute);
 		else cefInitData.push (execute);
 	}
 	catch (e) 
@@ -57,7 +57,7 @@ mp.gui.json = (name, json) => {
 	try
 	{
 		if (cefInit) 
-			main_browser.execute (`${name}('${JSON.stringify (json)}')`);
+			global.main_browser.execute (`${name}('${JSON.stringify (json)}')`);
 		else 
 			cefInitData.push (execute);
 	}
@@ -77,7 +77,7 @@ gm.events.add("client:AuthInit", () => {
 	if (cefInitData.length) {
 		cefInitData.forEach((execute) => {
 			//mp.gui.execute (execute);
-			main_browser.execute (execute);
+			global.main_browser.execute (execute);
 		});
 		cefInitData = [];
 	}

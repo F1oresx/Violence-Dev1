@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectX CEF</title>
+
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+
+    <link rel="stylesheet" href="./views/main.css">
+
+	<link rel="stylesheet" href="./views/players/intro/style.css">
+</head>
+<body>
+	<div id="intro" v-cloak>
+		<div v-if="opened" class="intro_content fullscreen">
+			<img src="./assets/pictures/projectx_logo_red.png" class="intro_content_logo centrized" alt="">
+			<img src="./assets/pictures/projectx_logo_red.png" class="intro_content_logo blured centrized" alt="">
+			<div class="intro_content_helpKey centrized">Нажмите <b>ENTER</b> чтобы начать игру</div>
+			<div class="intro_content_text">Вы попали на многопользовательский сервер в GTA:V, где ты сам выбираешь кем быть. На данный момент сервер находится на первой версии игрового мода, поэтому возможны недоработки и ошибки.<br>Project X не имеет отношения к Take-Two Interactive Software (Rockstar Games)</div>
+		</div>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script>Vue.filter('formatThousands', (x) => { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") })</script>
+
+    <!-- Modules -->
+    <script src="./modules/App.js"></script>
+    <script src="./modules/RAGE.js"></script>
+	<script src="./modules/svg.js"></script>
+
+	<script src="./views/players/intro/intro.js"></script>
+</body>
+</html>

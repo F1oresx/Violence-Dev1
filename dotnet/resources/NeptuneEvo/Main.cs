@@ -514,24 +514,24 @@ namespace NeptuneEvo
                 /*if (ServerSettings.MoneyMultiplier >= 2) NAPI.Server.SetServerName($"{ServerName} | X{ServerSettings.MoneyMultiplier}"); // NOT WORKING AT 0.3.7*/
                 /*CreateBlip(new BlipData(621, "Quests", new Vector3(343.895447, -1399.03381, 32.509285), 1, true, 1f));*/
 
-                CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-358.4868, -52.37103, 53.29886), 38, true, 0.7f));
-                CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-1646.822, -228.72, 55.92), 38, true, 0.7f));
-                CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-2025.384, -469.42, 11.42), 38, true, 0.7f));
-                CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1188.66, -1548.76, 39.37), 38, true, 0.7f));
-                /*CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-975.0394, -1474.377, 5.020052), 38, true, 0.7f));*/
-                CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-39.57354, 211.735, 106.1348), 38, true, 0.7f));
+                CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-358.4868, -52.37103, 53.29886), 38, true, 0.48f));
+                CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-1646.822, -228.72, 55.92), 38, true, 0.48f));
+                CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-2025.384, -469.42, 11.42), 38, true, 0.48f));
+                CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1188.66, -1548.76, 39.37), 38, true, 0.48f));
+                /*CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-975.0394, -1474.377, 5.020052), 38, true, 0.7f));*/
+                CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-39.57354, 211.735, 106.1348), 38, true, 0.48f));
 
                 if (ServerNumber <= 1) // Поставлены только на Black'е и отображать на Test'овом
                 {
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-740.8164, -67.55, 41.75), 38, true, 0.7f));
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-927.72, -164.84, 41.87), 38, true, 0.7f));
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1032.372, -771.5231, 56.94999), 38, true, 0.7f));
-                    /*CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1142.26, -392.178, 65.92946), 38, true, 0.7f));*/
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-463.0861, -806.9484, 29.41866), 38, true, 0.7f));
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(373.6721, 279.976, 103.3404), 38, true, 0.7f));
-                    /*CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(281.2544, -194.9666, 61.57069), 38, true, 0.7f));*/
-                    /*CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-204.1797, 308.1642, 96.94662), 38, true, 0.7f));*/
-                    CreateBlip(new BlipData(856, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-354.1708, 286.2279, 84.74282), 38, true, 0.7f));
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-740.8164, -67.55, 41.75), 38, true, 0.48f));
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-927.72, -164.84, 41.87), 38, true, 0.48f));
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1032.372, -771.5231, 56.94999), 38, true, 0.48f));
+                    /*CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(1142.26, -392.178, 65.92946), 38, true, 0.7f));*/
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-463.0861, -806.9484, 29.41866), 38, true, 0.48f));
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(373.6721, 279.976, 103.3404), 38, true, 0.48f));
+                    /*CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(281.2544, -194.9666, 61.57069), 38, true, 0.7f));*/
+                    /*CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-204.1797, 308.1642, 96.94662), 38, true, 0.7f));*/
+                    CreateBlip(new BlipData(267, LangFunc.GetText(LangType.Ru, DataName.Parking), new Vector3(-354.1708, 286.2279, 84.74282), 38, true, 0.48f));
                 }
 
                 CreateBlip(new BlipData(304, LangFunc.GetText(LangType.Ru, DataName.Theather), new Vector3(683.739, 570.40, 130.46), 7, true));

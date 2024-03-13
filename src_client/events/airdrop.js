@@ -1,6 +1,6 @@
 const 
-    covercrate_model = ["ex_prop_adv_case_sm", "ex_prop_adv_case_sm_02", "ex_prop_adv_case_sm_03", "ex_prop_adv_case_sm_flash", "ex_prop_adv_case_sm_flash"],
-    parachute_model = "p_cargo_chute_s";
+    covercrate_model = ["prop_container_ld_pu"],
+    parachute_model = "p_cargo_chute_s";    
 let globalFightData = {};
 
 const lodDist = 1000;

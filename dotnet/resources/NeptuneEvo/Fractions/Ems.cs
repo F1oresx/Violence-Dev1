@@ -58,12 +58,12 @@ namespace NeptuneEvo.Fractions
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Удаление татуировки"), new Vector3(emsCheckpoints[6].X, emsCheckpoints[6].Y, emsCheckpoints[6].Z + 0.3), 5F, 0.3F, 0, new Color(255, 255, 255));
 
                 #region Load Medkits
-                CustomColShape.CreateCylinderColShape(new Vector3(3579.259, 3670.1619, 33.88865), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
-                NAPI.Marker.CreateMarker(1, new Vector3(3579.259, 3670.1619, 33.88865), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
+                CustomColShape.CreateCylinderColShape(new Vector3(3563.978, 3666.8855, 32.993034), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
+                NAPI.Marker.CreateMarker(1, new Vector3(3563.978, 3666.8855, 32.993034), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
 
-                CustomColShape.CreateCylinderColShape(new Vector3(3563.891, 3669.1982, 33.926765), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
-                NAPI.Marker.CreateMarker(1, new Vector3(3563.891, 3669.1982, 33.926765), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
-                Main.CreateBlip(new Main.BlipData(499, "Humane Labs", new Vector3(3579.259, 3670.1619, 33.88865), 4, true));
+                CustomColShape.CreateCylinderColShape(new Vector3(3577.1895, 3664.936, 33.054184), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
+                NAPI.Marker.CreateMarker(1, new Vector3(3577.1895, 3664.936, 33.054184), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
+                Main.CreateBlip(new Main.BlipData(499, "Humane Labs", new Vector3(3577.1895, 3664.936, 33.054184), 4, true));
                 #endregion
 
                 CustomColShape.CreateCylinderColShape(emsCheckpoints[7], 1, 2, 0, ColShapeEnums.FractionEms, 6); // roof

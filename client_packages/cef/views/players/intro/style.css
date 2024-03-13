@@ -1,0 +1,43 @@
+.intro_content_logo {
+    width: 50vh;
+}
+
+.intro_content_logo.blured {
+    z-index: -1;
+    filter: blur(2vh);
+
+    animation: intro_impulse 3s forwards infinite ease;
+}
+
+@keyframes intro_impulse {
+    from {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro_content_text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 2vh;
+    text-align: center;
+    font-size: 1.25vh;
+    opacity: .5;
+    width: 70vh;
+}
+
+.intro_content_helpKey {
+    margin-top: 25vh;
+    font-size: 2vh;
+}
+
+.intro_content_helpKey b {
+    color: rgba(var(--main-color));
+    text-shadow: 0 0 4vh rgba(var(--main-color), .5);
+}

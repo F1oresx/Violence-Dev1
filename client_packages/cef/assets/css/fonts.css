@@ -1,0 +1,112 @@
+@font-face{
+    font-family:ProximaNova-Condensed;
+    src:url(../fonts/ProximaNovaCond-Regular.45e443b7.ttf);
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-Condensed;
+    src:url(../fonts/ProximaNovaCond-Light.e72c6a1c.ttf);
+    font-weight:100;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-Condensed;
+    src:url(../fonts/ProximaNovaCond-LightIt.fee4e5d5.ttf);
+    font-weight:100;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova-Condensed;
+    src:url(../fonts/ProximaNovaCond-Semibold.c8b3d95a.ttf);
+    font-weight:500;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-ExtraCondensed;
+    src:url(../fonts/ProximaNovaExCn-Regular.44d67cdb.ttf);
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-ExtraCondensed;
+    src:url(../fonts/ProximaNovaExCn-Light.91f04efd.ttf);
+    font-weight:100;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-ExtraCondensed;
+    src:url(../fonts/ProximaNovaExCn-Semibold.0ed922a3.ttf);
+    font-weight:500;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova-ExtraCondensed;
+    src:url(../fonts/ProximaNovaExCn-Bold.00063272.ttf);
+    font-weight:900;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Regular.7ce6760d.ttf);
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Regular-Italic.61fd1e83.ttf);
+    font-weight:400;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Semibold.df8c6264.ttf);
+    font-weight:500
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-SemiboldIt.76050cd0.ttf);
+    font-weight:500;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Light.0188899c.ttf);
+    font-weight:100
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-LightItalic.4082bf05.ttf);
+    font-weight:100;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Bold.926a08fb.ttf);
+    font-weight:900;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-BoldItalic.0e18c5b3.ttf);
+    font-weight:900;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Extrabld.51563919.ttf);
+    font-weight:700;
+    font-style:normal
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-ExtraBold-Italic.200afa63.ttf);
+    font-weight:700;
+    font-style:italic
+}
+@font-face{
+    font-family:ProximaNova;
+    src:url(../fonts/ProximaNova-Thin.4a396196.ttf);
+    font-weight:300;
+    font-style:normal
+}

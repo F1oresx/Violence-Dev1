@@ -61,10 +61,10 @@ global.setStartCam = async () => {
     }
 }
 
-setTimeout(() => {
+/*setTimeout(() => {
     global.setStartCam ();
     gm.discord(translateText("Восхищается окном логина"));
-}, 150)
+}, 150)*/
 
 gm.events.add('client.auth', async (login) => {
     mp.gui.emmit(`window.listernEvent ('queueText', false);`);
